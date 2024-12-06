@@ -10,6 +10,8 @@ from geometry_msgs.msg import Twist
 
 from locobot_pkg.go_to_position import GoToPosition
 
+from time import sleep
+
 
 class MoveLocobot(Node): 
 
@@ -19,7 +21,7 @@ class MoveLocobot(Node):
         self.isDocked = True
 
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.undock_status_verifier = self.create_subscription(DockStatus, '/dock_status', self.parseDockStatusVerifier)
+        self.undock_status_verifier = self.create_subscription(DockStatus, '/dock_status', self.parseDockStatusVerifier, 10)
         
         self.action_undocker_ = ActionClient(self, Undock, '/undock')
         self.undock()
@@ -49,12 +51,15 @@ class MoveLocobot(Node):
         # Callback quand le résultat de l'undock est reçu
         result = future.result()
         if result:
-            self.get_logger().info(f"Undocking terminé avec succès. Status: {result.status}") 
+            if self.isDocked==False:  
+                self.get_logger().info(f"Undocking terminé avec succès. Status: {result.status}") 
 
-            goToPos = GoToPosition(self)
-            goToPos.navigate(self.whenNavigateToPoseIsDone, Point(x=5.0,y=1.0,z=0.0), Quaternion(x=0.0,y=0.0,z=0.0,w=1.0))
-
-            #self.timer_ = self.create_timer(1/20, self.moveRobot)
+                goToPos = GoToPosition(self)
+                goToPos.navigate(self.whenNavigateToPoseIsDone, Point(x=-5.0,y=0.0,z=0.0), Quaternion(x=0.0,y=0.0,z=0.0,w=1.0))
+                # self.timer_ = self.create_timer(1/20, self.moveRobot)
+            else: 
+                sleep(3)
+                self.goal_response_callback(future) 
             
         else:
             self.get_logger().error("Échec de l'undocking.")
@@ -63,6 +68,8 @@ class MoveLocobot(Node):
         self.get_logger().info("Position is reached")
 
     def parseDockStatusVerifier(self, result):
+        self.get_logger().info(f"New dock position {result.is_docked}")
+
         self.isDocked  = result.is_docked 
 
 def main(args = None): 
