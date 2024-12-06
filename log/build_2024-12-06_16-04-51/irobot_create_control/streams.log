@@ -1,0 +1,23 @@
+[0.103s] Invoking command in '/home/eea/create3_ws/build/irobot_create_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eea/create3_ws/install/locobot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_control -- -j8 -l8
+[1.032s] Invoked command in '/home/eea/create3_ws/build/irobot_create_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eea/create3_ws/install/locobot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_control -- -j8 -l8
+[1.061s] Invoking command in '/home/eea/create3_ws/build/irobot_create_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eea/create3_ws/install/locobot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_control
+[1.108s] -- Install configuration: ""
+[1.111s] -- Execute custom install script
+[1.113s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control//launch/include/control.py
+[1.115s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control//config/control.yaml
+[1.116s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/package_run_dependencies/irobot_create_control
+[1.119s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/parent_prefix_path/irobot_create_control
+[1.119s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/ament_prefix_path.sh
+[1.123s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/ament_prefix_path.dsv
+[1.133s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/path.sh
+[1.134s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/path.dsv
+[1.134s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.bash
+[1.135s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.sh
+[1.135s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.zsh
+[1.135s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.dsv
+[1.135s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/package.dsv
+[1.159s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/packages/irobot_create_control
+[1.164s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/cmake/irobot_create_controlConfig.cmake
+[1.165s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/cmake/irobot_create_controlConfig-version.cmake
+[1.165s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/package.xml
+[1.241s] Invoked command in '/home/eea/create3_ws/build/irobot_create_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eea/create3_ws/install/locobot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_control

@@ -1,0 +1,223 @@
+[0.214s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/eea/create3_ws']
+[0.214s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/eea/create3_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70eced83ad40>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x70eced839c90>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x70eced839c90>>, mixin_verb=('list',))
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.721s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.722s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.723s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eea/create3_ws'
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.723s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'ignore'
+[0.724s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'ignore_ament_install'
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extensions ['colcon_pkg']
+[0.725s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'colcon_pkg'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extensions ['colcon_meta']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'colcon_meta'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extensions ['ros']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'ros'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extensions ['cmake', 'python']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'cmake'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'python'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extensions ['python_setup_py']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws) by extension 'python_setup_py'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/build) by extension 'ignore'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/build) ignored
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/install) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/install) ignored
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/log) by extension 'ignore'
+[0.800s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/log) ignored
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'ignore'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'ignore_ament_install'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extensions ['colcon_pkg']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'colcon_pkg'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extensions ['colcon_meta']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'colcon_meta'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extensions ['ros']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'ros'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extensions ['cmake', 'python']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'cmake'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'python'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extensions ['python_setup_py']
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src) by extension 'python_setup_py'
+[0.804s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'ignore'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'ignore_ament_install'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extensions ['colcon_pkg']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'colcon_pkg'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extensions ['colcon_meta']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'colcon_meta'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extensions ['ros']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'ros'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extensions ['cmake', 'python']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'cmake'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'python'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extensions ['python_setup_py']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim) by extension 'python_setup_py'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extensions ['ignore', 'ignore_ament_install']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'ignore'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'ignore_ament_install'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extensions ['colcon_pkg']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'colcon_pkg'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extensions ['colcon_meta']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'colcon_meta'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extensions ['ros']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'ros'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extensions ['cmake', 'python']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'cmake'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'python'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extensions ['python_setup_py']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common) by extension 'python_setup_py'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extension 'ignore'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extension 'ignore_ament_install'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extensions ['colcon_pkg']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extension 'colcon_pkg'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extensions ['colcon_meta']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extension 'colcon_meta'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extensions ['ros']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup) by extension 'ros'
+[0.828s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup' with type 'ros.ament_cmake' and name 'irobot_create_common_bringup'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extensions ['ignore', 'ignore_ament_install']
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extension 'ignore'
+[0.831s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extension 'ignore_ament_install'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extensions ['colcon_pkg']
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extension 'colcon_pkg'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extensions ['colcon_meta']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extension 'colcon_meta'
+[0.834s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extensions ['ros']
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control) by extension 'ros'
+[0.840s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control' with type 'ros.ament_cmake' and name 'irobot_create_control'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extension 'ignore'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extension 'ignore_ament_install'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extensions ['colcon_pkg']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extension 'colcon_pkg'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extensions ['colcon_meta']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extension 'colcon_meta'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extensions ['ros']
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description) by extension 'ros'
+[0.843s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description' with type 'ros.ament_cmake' and name 'irobot_create_description'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.844s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extension 'ignore'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extension 'ignore_ament_install'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extensions ['colcon_pkg']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extension 'colcon_pkg'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extensions ['colcon_meta']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extension 'colcon_meta'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extensions ['ros']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes) by extension 'ros'
+[0.854s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes' with type 'ros.ament_cmake' and name 'irobot_create_nodes'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extension 'colcon_pkg'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extensions ['colcon_meta']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extension 'colcon_meta'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extensions ['ros']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox) by extension 'ros'
+[0.862s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox' with type 'ros.ament_cmake' and name 'irobot_create_toolbox'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'ignore'
+[0.863s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'ignore_ament_install'
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extensions ['colcon_pkg']
+[0.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'colcon_pkg'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extensions ['colcon_meta']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'colcon_meta'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extensions ['ros']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'ros'
+[0.866s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extensions ['cmake', 'python']
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'cmake'
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'python'
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extensions ['python_setup_py']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo) by extension 'python_setup_py'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extension 'ignore'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extension 'ignore_ament_install'
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extensions ['colcon_pkg']
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extension 'colcon_pkg'
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extensions ['colcon_meta']
+[0.870s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extension 'colcon_meta'
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extensions ['ros']
+[0.871s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup) by extension 'ros'
+[0.877s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_bringup' with type 'ros.ament_cmake' and name 'irobot_create_gazebo_bringup'
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.878s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extension 'ignore'
+[0.879s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extension 'ignore_ament_install'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extensions ['colcon_pkg']
+[0.881s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extension 'colcon_pkg'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extensions ['colcon_meta']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extension 'colcon_meta'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extensions ['ros']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins) by extension 'ros'
+[0.893s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins' with type 'ros.ament_cmake' and name 'irobot_create_gazebo_plugins'
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.894s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extension 'ignore'
+[0.895s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extension 'ignore_ament_install'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extensions ['colcon_pkg']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extension 'colcon_pkg'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extensions ['colcon_meta']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extension 'colcon_meta'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extensions ['ros']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim) by extension 'ros'
+[0.903s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_sim' with type 'ros.ament_cmake' and name 'irobot_create_gazebo_sim'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extensions ['ignore', 'ignore_ament_install']
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'ignore'
+[0.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'ignore_ament_install'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extensions ['colcon_pkg']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'colcon_pkg'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extensions ['colcon_meta']
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'colcon_meta'
+[0.905s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extensions ['ros']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'ros'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extensions ['cmake', 'python']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'cmake'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'python'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extensions ['python_setup_py']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition) by extension 'python_setup_py'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extension 'ignore'
+[0.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extension 'ignore_ament_install'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extensions ['colcon_pkg']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extension 'colcon_pkg'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extensions ['colcon_meta']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extension 'colcon_meta'
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extensions ['ros']
+[0.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup) by extension 'ros'
+[0.910s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_bringup' with type 'ros.ament_cmake' and name 'irobot_create_ignition_bringup'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extension 'ignore'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extension 'ignore_ament_install'
+[0.911s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extensions ['colcon_pkg']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extension 'colcon_pkg'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extensions ['colcon_meta']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extension 'colcon_meta'
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extensions ['ros']
+[0.912s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins) by extension 'ros'
+[0.916s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins' with type 'ros.ament_cmake' and name 'irobot_create_ignition_plugins'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extension 'ignore'
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extension 'ignore_ament_install'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extensions ['colcon_pkg']
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extension 'colcon_pkg'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extensions ['colcon_meta']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extension 'colcon_meta'
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extensions ['ros']
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim) by extension 'ros'
+[0.925s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_sim' with type 'ros.ament_cmake' and name 'irobot_create_ignition_sim'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extensions ['ignore', 'ignore_ament_install']
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extension 'ignore'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extension 'ignore_ament_install'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extensions ['colcon_pkg']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extension 'colcon_pkg'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extensions ['colcon_meta']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extension 'colcon_meta'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extensions ['ros']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox) by extension 'ros'
+[0.935s] DEBUG:colcon.colcon_core.package_identification:Package '/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox' with type 'ros.ament_cmake' and name 'irobot_create_ignition_toolbox'
+[0.937s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.096s] INFO:colcon.colcon_metadata.metadata.colcon_pkg:Updating descriptor of package '/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins' from colcon.pkg: {'dependencies': ['Gazebo']}

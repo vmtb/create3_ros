@@ -1,0 +1,24 @@
+[4.348s] Invoking command in '/home/eea/create3_ws/build/locobot_pkg': PYTHONPATH=/home/eea/create3_ws/build/locobot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eea/create3_ws/install/locobot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eea/create3_ws/build/locobot_pkg/build --no-deps symlink_data
+[5.862s] running develop
+[6.532s] running egg_info
+[6.533s] creating locobot_pkg.egg-info
+[6.535s] writing locobot_pkg.egg-info/PKG-INFO
+[6.535s] writing dependency_links to locobot_pkg.egg-info/dependency_links.txt
+[6.536s] writing entry points to locobot_pkg.egg-info/entry_points.txt
+[6.536s] writing requirements to locobot_pkg.egg-info/requires.txt
+[6.536s] writing top-level names to locobot_pkg.egg-info/top_level.txt
+[6.537s] writing manifest file 'locobot_pkg.egg-info/SOURCES.txt'
+[6.542s] reading manifest file 'locobot_pkg.egg-info/SOURCES.txt'
+[6.544s] writing manifest file 'locobot_pkg.egg-info/SOURCES.txt'
+[6.555s] running build_ext
+[6.556s] Creating /home/eea/create3_ws/install/locobot_pkg/lib/python3.10/site-packages/locobot-pkg.egg-link (link to .)
+[6.572s] Installing move_locobot script to /home/eea/create3_ws/install/locobot_pkg/lib/locobot_pkg
+[6.572s] 
+[6.572s] Installed /home/eea/create3_ws/build/locobot_pkg
+[6.573s] running symlink_data
+[6.573s] creating /home/eea/create3_ws/install/locobot_pkg/share/ament_index
+[6.573s] creating /home/eea/create3_ws/install/locobot_pkg/share/ament_index/resource_index
+[6.574s] creating /home/eea/create3_ws/install/locobot_pkg/share/ament_index/resource_index/packages
+[6.574s] symbolically linking /home/eea/create3_ws/build/locobot_pkg/resource/locobot_pkg -> /home/eea/create3_ws/install/locobot_pkg/share/ament_index/resource_index/packages
+[6.577s] symbolically linking /home/eea/create3_ws/build/locobot_pkg/package.xml -> /home/eea/create3_ws/install/locobot_pkg/share/locobot_pkg
+[7.013s] Invoked command in '/home/eea/create3_ws/build/locobot_pkg' returned '0': PYTHONPATH=/home/eea/create3_ws/build/locobot_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eea/create3_ws/install/locobot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/eea/create3_ws/build/locobot_pkg/build --no-deps symlink_data

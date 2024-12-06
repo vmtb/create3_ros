@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating locobot_pkg.egg-info
+writing locobot_pkg.egg-info/PKG-INFO
+writing dependency_links to locobot_pkg.egg-info/dependency_links.txt
+writing entry points to locobot_pkg.egg-info/entry_points.txt
+writing requirements to locobot_pkg.egg-info/requires.txt
+writing top-level names to locobot_pkg.egg-info/top_level.txt
+writing manifest file 'locobot_pkg.egg-info/SOURCES.txt'
+reading manifest file 'locobot_pkg.egg-info/SOURCES.txt'
+writing manifest file 'locobot_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/eea/create3_ws/install/locobot_pkg/lib/python3.10/site-packages/locobot-pkg.egg-link (link to .)
+Installing move_locobot script to /home/eea/create3_ws/install/locobot_pkg/lib/locobot_pkg
+
+Installed /home/eea/create3_ws/build/locobot_pkg
+running symlink_data
+creating /home/eea/create3_ws/install/locobot_pkg/share/ament_index
+creating /home/eea/create3_ws/install/locobot_pkg/share/ament_index/resource_index
+creating /home/eea/create3_ws/install/locobot_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/eea/create3_ws/build/locobot_pkg/resource/locobot_pkg -> /home/eea/create3_ws/install/locobot_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/eea/create3_ws/build/locobot_pkg/package.xml -> /home/eea/create3_ws/install/locobot_pkg/share/locobot_pkg

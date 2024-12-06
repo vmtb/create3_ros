@@ -1,0 +1,39 @@
+[0.013s] Invoking command in '/home/eea/create3_ws/build/irobot_create_nodes': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_nodes -- -j8 -l8
+[0.097s] [ 48%] [32mBuilding CXX object CMakeFiles/hazard_publisher_lib.dir/src/hazards_vector_publisher.cpp.o[0m
+[0.098s] [ 48%] [32mBuilding CXX object CMakeFiles/ir_intensity_publisher_lib.dir/src/ir_intensity_vector_publisher.cpp.o[0m
+[0.113s] [ 48%] [32mBuilding CXX object CMakeFiles/wheel_status_publisher_lib.dir/src/wheels_publisher.cpp.o[0m
+[0.118s] [ 48%] [32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control_node.cpp.o[0m
+[0.141s] [ 48%] Built target hazards_vector_publisher
+[0.148s] [ 48%] Built target motion_control
+[0.153s] [ 48%] Built target ir_intensity_vector_publisher
+[0.156s] [ 48%] Built target wheel_status_publisher
+[0.201s] [ 48%] [32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/docking_behavior.cpp.o[0m
+[0.243s] [ 48%] [32mBuilding CXX object CMakeFiles/robot_state_lib.dir/src/robot_state.cpp.o[0m
+[0.253s] [ 48%] [32mBuilding CXX object CMakeFiles/ui_mgr_lib.dir/src/ui_mgr.cpp.o[0m
+[0.258s] [ 48%] Built target robot_state
+[0.367s] [ 48%] [32mBuilding CXX object CMakeFiles/ui_mgr.dir/rclcpp_components/node_main_ui_mgr.cpp.o[0m
+[17.854s] [ 48%] [32m[1mLinking CXX executable ui_mgr[0m
+[18.207s] [ 48%] Built target ui_mgr
+[18.267s] [ 48%] [32mBuilding CXX object CMakeFiles/mock_publisher_lib.dir/src/mock_publisher.cpp.o[0m
+[130.768s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+[132.727s] compilation terminated.
+[132.732s] gmake[2]: *** [CMakeFiles/ui_mgr_lib.dir/build.make:76 : CMakeFiles/ui_mgr_lib.dir/src/ui_mgr.cpp.o] Erreur 1
+[132.733s] gmake[1]: *** [CMakeFiles/Makefile2:427 : CMakeFiles/ui_mgr_lib.dir/all] Erreur 2
+[132.733s] gmake[1]: *** Attente des tâches non terminées....
+[667.854s] [ 48%] [32m[1mLinking CXX shared library libmock_publisher_lib.so[0m
+[669.152s] [ 48%] Built target mock_publisher_lib
+[673.572s] [ 48%] [32m[1mLinking CXX shared library libir_intensity_publisher_lib.so[0m
+[674.541s] [ 48%] [32m[1mLinking CXX shared library libhazard_publisher_lib.so[0m
+[676.339s] [ 48%] Built target ir_intensity_publisher_lib
+[676.516s] [ 48%] Built target hazard_publisher_lib
+[680.863s] [ 48%] [32m[1mLinking CXX shared library libwheel_status_publisher_lib.so[0m
+[682.397s] [ 48%] Built target wheel_status_publisher_lib
+[686.908s] [ 48%] [32m[1mLinking CXX shared library librobot_state_lib.so[0m
+[688.367s] [ 48%] Built target robot_state_lib
+[702.537s] [ 48%] [32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/wall_follow_states.cpp.o[0m
+[705.868s] [ 48%] [32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/wall_follow_behavior.cpp.o[0m
+[714.826s] [ 48%] [32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/reflex_behavior.cpp.o[0m
+[718.500s] [ 48%] [32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/drive_goal_behaviors.cpp.o[0m
+[724.972s] [ 48%] [32m[1mLinking CXX shared library libmotion_control_lib.so[0m
+[728.650s] [ 48%] Built target motion_control_lib
+[728.657s] gmake: *** [Makefile:146 : all] Erreur 2

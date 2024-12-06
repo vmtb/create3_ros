@@ -1,0 +1,73 @@
+[0.018s] Invoking command in '/home/eea/create3_ws/build/irobot_create_gazebo_plugins': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_gazebo_plugins -- -j8 -l8
+[0.099s] [35m[1mConsolidate compiler generated dependencies of target gazebo_ros_create_helpers[0m
+[0.204s] [  5%] Built target gazebo_ros_create_helpers
+[0.239s] [35m[1mConsolidate compiler generated dependencies of target gazebo_ros_create_bumper[0m
+[0.248s] [35m[1mConsolidate compiler generated dependencies of target gazebo_ros_create_ir_intensity_sensor[0m
+[0.272s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_docking_status.dir/src/gazebo_ros_docking_status.cpp.o[0m
+[0.276s] [  5%] [32mBuilding CXX object CMakeFiles/docking_manager.dir/src/docking_manager.cpp.o[0m
+[0.289s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_wheel_drop.dir/src/gazebo_ros_wheel_drop.cpp.o[0m
+[0.291s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_optical_mouse.dir/src/gazebo_ros_optical_mouse.cpp.o[0m
+[0.292s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_cliff_sensor.dir/src/gazebo_ros_cliff_sensor.cpp.o[0m
+[0.310s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_imu.dir/src/gazebo_ros_imu.cpp.o[0m
+[0.356s] [  5%] Built target gazebo_ros_create_ir_intensity_sensor
+[0.399s] [  5%] Built target gazebo_ros_create_bumper
+[31.162s] [  5%] [32m[1mLinking CXX shared library libdocking_manager.so[0m
+[32.446s] [  5%] Built target docking_manager
+[32.484s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_ir_opcode.dir/src/gazebo_ros_ir_opcode.cpp.o[0m
+[35.650s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_imu.so[0m
+[35.704s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_wheel_drop.so[0m
+[36.172s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_optical_mouse.so[0m
+[38.568s] [  5%] Built target gazebo_ros_create_imu
+[38.720s] [  5%] Built target gazebo_ros_create_wheel_drop
+[38.865s] [  5%] Built target gazebo_ros_create_optical_mouse
+[40.254s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_cliff_sensor.so[0m
+[41.619s] [  5%] Built target gazebo_ros_create_cliff_sensor
+[41.779s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_docking_status.so[0m
+[43.731s] [  5%] Built target gazebo_ros_create_docking_status
+[50.410s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_ir_opcode.so[0m
+[51.011s] [  5%] Built target gazebo_ros_create_ir_opcode
+[51.069s] Invoked command in '/home/eea/create3_ws/build/irobot_create_gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_gazebo_plugins -- -j8 -l8
+[51.074s] Invoking command in '/home/eea/create3_ws/build/irobot_create_gazebo_plugins': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_gazebo_plugins
+[51.081s] -- Install configuration: ""
+[51.082s] -- Execute custom install script
+[51.082s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/environment/library_path.sh
+[51.090s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/environment/library_path.dsv
+[51.098s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/docking_manager.hpp
+[51.105s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_bumper.hpp
+[51.113s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_cliff_sensor.hpp
+[51.120s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_docking_status.hpp
+[51.128s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_helpers.hpp
+[51.135s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_imu.hpp
+[51.143s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_ir_intensity_sensor.hpp
+[51.152s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_ir_opcode.hpp
+[51.161s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_optical_mouse.hpp
+[51.170s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/include/irobot_create_gazebo_plugins/gazebo_ros_wheel_drop.hpp
+[51.180s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_bumper.so
+[51.188s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_cliff_sensor.so
+[51.196s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_docking_status.so
+[51.205s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_helpers.so
+[51.213s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_imu.so
+[51.221s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_ir_intensity_sensor.so
+[51.230s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_optical_mouse.so
+[51.238s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_ir_opcode.so
+[51.248s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libdocking_manager.so
+[51.257s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/lib/libgazebo_ros_create_wheel_drop.so
+[51.267s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/irobot_create_gazebo_plugins
+[51.275s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/irobot_create_gazebo_plugins
+[51.282s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/environment/ament_prefix_path.sh
+[51.290s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/environment/ament_prefix_path.dsv
+[51.297s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/environment/path.sh
+[51.304s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/environment/path.dsv
+[51.311s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/local_setup.bash
+[51.319s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/local_setup.sh
+[51.326s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/local_setup.zsh
+[51.334s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/local_setup.dsv
+[51.342s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/package.dsv
+[51.351s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/ament_index/resource_index/packages/irobot_create_gazebo_plugins
+[51.360s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[51.367s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[51.375s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[51.383s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/cmake/irobot_create_gazebo_pluginsConfig.cmake
+[51.390s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/cmake/irobot_create_gazebo_pluginsConfig-version.cmake
+[51.397s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_gazebo_plugins/share/irobot_create_gazebo_plugins/package.xml
+[51.407s] Invoked command in '/home/eea/create3_ws/build/irobot_create_gazebo_plugins' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_gazebo_plugins

@@ -1,0 +1,24 @@
+[ 50%] [34m[1mAutomatic MOC for target Create3Hmi[0m
+[ 50%] Built target Create3Hmi_autogen
+[35m[1mConsolidate compiler generated dependencies of target Create3Hmi[0m
+[ 50%] [32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o[0m
+[ 50%] [32m[1mLinking CXX shared library libCreate3Hmi.so[0m
+[ 50%] Built target Create3Hmi
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/lib/libCreate3Hmi.so
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/ament_index/resource_index/package_run_dependencies/irobot_create_ignition_plugins
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/ament_index/resource_index/parent_prefix_path/irobot_create_ignition_plugins
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/environment/ament_prefix_path.sh
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/environment/ament_prefix_path.dsv
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/environment/path.sh
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/environment/path.dsv
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/local_setup.bash
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/local_setup.sh
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/local_setup.zsh
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/local_setup.dsv
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/package.dsv
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/ament_index/resource_index/packages/irobot_create_ignition_plugins
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/cmake/irobot_create_ignition_pluginsConfig.cmake
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/cmake/irobot_create_ignition_pluginsConfig-version.cmake
+-- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_plugins/share/irobot_create_ignition_plugins/package.xml

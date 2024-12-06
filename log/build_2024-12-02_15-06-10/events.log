@@ -1,0 +1,828 @@
+[0.000000] (-) TimerEvent: {}
+[0.000158] (irobot_create_control) JobQueued: {'identifier': 'irobot_create_control', 'dependencies': OrderedDict()}
+[0.000208] (irobot_create_description) JobQueued: {'identifier': 'irobot_create_description', 'dependencies': OrderedDict()}
+[0.000227] (irobot_create_ignition_plugins) JobQueued: {'identifier': 'irobot_create_ignition_plugins', 'dependencies': OrderedDict()}
+[0.000263] (irobot_create_toolbox) JobQueued: {'identifier': 'irobot_create_toolbox', 'dependencies': OrderedDict()}
+[0.000277] (irobot_create_gazebo_plugins) JobQueued: {'identifier': 'irobot_create_gazebo_plugins', 'dependencies': OrderedDict([('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox')])}
+[0.000314] (irobot_create_ignition_toolbox) JobQueued: {'identifier': 'irobot_create_ignition_toolbox', 'dependencies': OrderedDict([('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox')])}
+[0.000330] (irobot_create_nodes) JobQueued: {'identifier': 'irobot_create_nodes', 'dependencies': OrderedDict([('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox')])}
+[0.000345] (irobot_create_common_bringup) JobQueued: {'identifier': 'irobot_create_common_bringup', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes')])}
+[0.000389] (irobot_create_gazebo_bringup) JobQueued: {'identifier': 'irobot_create_gazebo_bringup', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_gazebo_plugins', '/home/eea/create3_ws/install/irobot_create_gazebo_plugins'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup')])}
+[0.000411] (irobot_create_ignition_bringup) JobQueued: {'identifier': 'irobot_create_ignition_bringup', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_ignition_plugins', '/home/eea/create3_ws/install/irobot_create_ignition_plugins'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_ignition_toolbox', '/home/eea/create3_ws/install/irobot_create_ignition_toolbox'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup')])}
+[0.000433] (irobot_create_gazebo_sim) JobQueued: {'identifier': 'irobot_create_gazebo_sim', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_gazebo_plugins', '/home/eea/create3_ws/install/irobot_create_gazebo_plugins'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup'), ('irobot_create_gazebo_bringup', '/home/eea/create3_ws/install/irobot_create_gazebo_bringup')])}
+[0.000454] (irobot_create_ignition_sim) JobQueued: {'identifier': 'irobot_create_ignition_sim', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_ignition_plugins', '/home/eea/create3_ws/install/irobot_create_ignition_plugins'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_ignition_toolbox', '/home/eea/create3_ws/install/irobot_create_ignition_toolbox'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup'), ('irobot_create_ignition_bringup', '/home/eea/create3_ws/install/irobot_create_ignition_bringup')])}
+[0.000589] (irobot_create_toolbox) JobStarted: {'identifier': 'irobot_create_toolbox'}
+[0.009774] (irobot_create_control) JobStarted: {'identifier': 'irobot_create_control'}
+[0.012542] (irobot_create_description) JobStarted: {'identifier': 'irobot_create_description'}
+[0.015516] (irobot_create_ignition_plugins) JobStarted: {'identifier': 'irobot_create_ignition_plugins'}
+[0.019456] (irobot_create_toolbox) JobProgress: {'identifier': 'irobot_create_toolbox', 'progress': 'cmake'}
+[0.019941] (irobot_create_toolbox) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_toolbox'], 'cwd': '/home/eea/create3_ws/build/irobot_create_toolbox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_toolbox'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.022999] (irobot_create_control) JobProgress: {'identifier': 'irobot_create_control', 'progress': 'cmake'}
+[0.023511] (irobot_create_control) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_control', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_control'], 'cwd': '/home/eea/create3_ws/build/irobot_create_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.024865] (irobot_create_description) JobProgress: {'identifier': 'irobot_create_description', 'progress': 'cmake'}
+[0.025465] (irobot_create_description) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_description'], 'cwd': '/home/eea/create3_ws/build/irobot_create_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.028234] (irobot_create_ignition_plugins) JobProgress: {'identifier': 'irobot_create_ignition_plugins', 'progress': 'cmake'}
+[0.028981] (irobot_create_ignition_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_ignition_plugins'], 'cwd': '/home/eea/create3_ws/build/irobot_create_ignition_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_ignition_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099395] (-) TimerEvent: {}
+[0.196069] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.196558] (irobot_create_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.197075] (irobot_create_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.198196] (irobot_create_toolbox) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199470] (-) TimerEvent: {}
+[0.299760] (-) TimerEvent: {}
+[0.323196] (irobot_create_toolbox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.324590] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.327775] (irobot_create_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.331409] (irobot_create_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.335708] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.335952] (irobot_create_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.336044] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.340147] (irobot_create_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400054] (-) TimerEvent: {}
+[0.414207] (irobot_create_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.415283] (irobot_create_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.416980] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.417104] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.422265] (irobot_create_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.422919] (irobot_create_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.423713] (irobot_create_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.424063] (irobot_create_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.424303] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.424696] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.426971] (irobot_create_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.427274] (irobot_create_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.427424] (irobot_create_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.427571] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.427959] (irobot_create_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.431327] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.431661] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.432266] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.432748] (irobot_create_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.437035] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500126] (-) TimerEvent: {}
+[0.503652] (irobot_create_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.504733] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.516440] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.516611] (irobot_create_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.518111] (irobot_create_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.518514] (irobot_create_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.519283] (irobot_create_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.519576] (irobot_create_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.519988] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.520598] (irobot_create_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.523751] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.523903] (irobot_create_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.524115] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.524179] (irobot_create_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.524515] (irobot_create_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.524593] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.526577] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.526678] (irobot_create_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.526791] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.526920] (irobot_create_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600214] (-) TimerEvent: {}
+[0.676541] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.677385] (irobot_create_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.679891] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.684760] (irobot_create_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700319] (-) TimerEvent: {}
+[0.749586] (irobot_create_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.749825] (irobot_create_toolbox) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.755324] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.756171] (irobot_create_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.786135] (irobot_create_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.786350] (irobot_create_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.789277] (irobot_create_toolbox) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.800419] (-) TimerEvent: {}
+[0.806304] (irobot_create_toolbox) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.810101] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.865595] (irobot_create_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.868071] (irobot_create_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.869180] (irobot_create_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.869971] (irobot_create_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.871095] (irobot_create_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.871600] (irobot_create_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.871989] (irobot_create_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.874026] (irobot_create_description) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_description\n'}
+[0.874169] (irobot_create_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.877760] (irobot_create_control) StdoutLine: {'line': b'-- Generating done\n'}
+[0.879747] (irobot_create_control) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_control\n'}
+[0.881271] (irobot_create_description) CommandEnded: {'returncode': 0}
+[0.881883] (irobot_create_description) JobProgress: {'identifier': 'irobot_create_description', 'progress': 'build'}
+[0.882830] (irobot_create_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_description', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.883982] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.885105] (irobot_create_control) CommandEnded: {'returncode': 0}
+[0.885633] (irobot_create_control) JobProgress: {'identifier': 'irobot_create_control', 'progress': 'build'}
+[0.886133] (irobot_create_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_control', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.889589] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.900540] (-) TimerEvent: {}
+[0.902381] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.919735] (irobot_create_description) CommandEnded: {'returncode': 0}
+[0.920472] (irobot_create_description) JobProgress: {'identifier': 'irobot_create_description', 'progress': 'install'}
+[0.921425] (irobot_create_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.932049] (irobot_create_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eea/create3_ws/build/irobot_create_description'], 'cwd': '/home/eea/create3_ws/build/irobot_create_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.933778] (irobot_create_control) CommandEnded: {'returncode': 0}
+[0.934526] (irobot_create_control) JobProgress: {'identifier': 'irobot_create_control', 'progress': 'install'}
+[0.935055] (irobot_create_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eea/create3_ws/build/irobot_create_control'], 'cwd': '/home/eea/create3_ws/build/irobot_create_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.938908] (irobot_create_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.939282] (irobot_create_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.939785] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/body_visual.dae\n'}
+[0.942381] (irobot_create_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.942853] (irobot_create_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.943316] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control//launch/include/control.py\n'}
+[0.945329] (irobot_create_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.949504] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/bumper_collision.dae\n'}
+[0.951416] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control//config/control.yaml\n'}
+[0.958243] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/bumper_visual.dae\n'}
+[0.959876] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/package_run_dependencies/irobot_create_control\n'}
+[0.967009] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/dock/visual.dae\n'}
+[0.967770] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/parent_prefix_path/irobot_create_control\n'}
+[0.975513] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/ament_prefix_path.sh\n'}
+[0.975891] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/bumper.urdf.xacro\n'}
+[0.983815] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/ament_prefix_path.dsv\n'}
+[0.984128] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/button.urdf.xacro\n'}
+[0.992381] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/caster.urdf.xacro\n'}
+[0.992734] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/path.sh\n'}
+[1.000615] (-) TimerEvent: {}
+[1.001572] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/common_properties.urdf.xacro\n'}
+[1.001851] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/path.dsv\n'}
+[1.010304] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/create3.urdf.xacro\n'}
+[1.010568] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.bash\n'}
+[1.012467] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.017136] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.018964] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/dock/ir_emitter.urdf.xacro\n'}
+[1.019186] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.sh\n'}
+[1.026966] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/dock/standard_dock.urdf.xacro\n'}
+[1.027524] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.zsh\n'}
+[1.035691] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.dsv\n'}
+[1.035972] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/cliff_sensor.urdf.xacro\n'}
+[1.044198] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/imu.urdf.xacro\n'}
+[1.044506] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/package.dsv\n'}
+[1.053414] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/ir_intensity.urdf.xacro\n'}
+[1.053702] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/packages/irobot_create_control\n'}
+[1.061360] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/ir_opcode_receivers.urdf.xacro\n'}
+[1.061669] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/cmake/irobot_create_controlConfig.cmake\n'}
+[1.069506] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/optical_mouse.urdf.xacro\n'}
+[1.069802] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/cmake/irobot_create_controlConfig-version.cmake\n'}
+[1.079747] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/package.xml\n'}
+[1.079918] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel.urdf.xacro\n'}
+[1.088239] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel_drop.urdf.xacro\n'}
+[1.090197] (irobot_create_control) CommandEnded: {'returncode': 0}
+[1.097340] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel_with_wheeldrop.urdf.xacro\n'}
+[1.100960] (-) TimerEvent: {}
+[1.107215] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/package_run_dependencies/irobot_create_description\n'}
+[1.115813] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/parent_prefix_path/irobot_create_description\n'}
+[1.117783] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.118757] (irobot_create_control) JobEnded: {'identifier': 'irobot_create_control', 'rc': 0}
+[1.124183] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/ament_prefix_path.sh\n'}
+[1.133525] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/ament_prefix_path.dsv\n'}
+[1.142000] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/path.sh\n'}
+[1.148401] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.149821] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.151030] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/path.dsv\n'}
+[1.160040] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.bash\n'}
+[1.168069] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.sh\n'}
+[1.176105] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.zsh\n'}
+[1.184405] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.dsv\n'}
+[1.190402] (irobot_create_toolbox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.192396] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/package.dsv\n'}
+[1.200941] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/packages/irobot_create_description\n'}
+[1.201184] (-) TimerEvent: {}
+[1.201745] (irobot_create_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.209216] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/cmake/irobot_create_descriptionConfig.cmake\n'}
+[1.217624] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/cmake/irobot_create_descriptionConfig-version.cmake\n'}
+[1.226134] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/package.xml\n'}
+[1.238415] (irobot_create_description) CommandEnded: {'returncode': 0}
+[1.248113] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.251905] (irobot_create_description) JobEnded: {'identifier': 'irobot_create_description', 'rc': 0}
+[1.269874] (irobot_create_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.270133] (irobot_create_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301315] (-) TimerEvent: {}
+[1.334298] (irobot_create_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.335425] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401425] (-) TimerEvent: {}
+[1.406443] (irobot_create_toolbox) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.485456] (irobot_create_toolbox) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.485850] (irobot_create_toolbox) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox/include\n'}
+[1.486011] (irobot_create_toolbox) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.486958] (irobot_create_toolbox) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.487095] (irobot_create_toolbox) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.487736] (irobot_create_toolbox) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.488951] (irobot_create_toolbox) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.489082] (irobot_create_toolbox) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.489507] (irobot_create_toolbox) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.491633] (irobot_create_toolbox) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.500288] (irobot_create_toolbox) StdoutLine: {'line': b'-- Generating done\n'}
+[1.501497] (-) TimerEvent: {}
+[1.503366] (irobot_create_toolbox) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_toolbox\n'}
+[1.512674] (irobot_create_toolbox) CommandEnded: {'returncode': 0}
+[1.513274] (irobot_create_toolbox) JobProgress: {'identifier': 'irobot_create_toolbox', 'progress': 'build'}
+[1.514422] (irobot_create_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_toolbox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_toolbox'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.559002] (irobot_create_toolbox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_toolbox.dir/src/polar_coordinates.cpp.o\x1b[0m\n'}
+[1.601637] (-) TimerEvent: {}
+[1.701955] (-) TimerEvent: {}
+[1.790886] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.802054] (-) TimerEvent: {}
+[1.875846] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.902161] (-) TimerEvent: {}
+[1.943846] (irobot_create_ignition_plugins) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.944004] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.944063] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.944751] (irobot_create_ignition_plugins) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.944839] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.945604] (irobot_create_ignition_plugins) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.946439] (irobot_create_ignition_plugins) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.947764] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.974086] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[1.977440] (irobot_create_ignition_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_ignition_plugins\n'}
+[1.990520] (irobot_create_ignition_plugins) CommandEnded: {'returncode': 0}
+[1.991222] (irobot_create_ignition_plugins) JobProgress: {'identifier': 'irobot_create_ignition_plugins', 'progress': 'build'}
+[1.992015] (irobot_create_ignition_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_ignition_plugins', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_ignition_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_ignition_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.002287] (-) TimerEvent: {}
+[2.039513] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mAutomatic MOC for target Create3Hmi\x1b[0m\n'}
+[2.102411] (-) TimerEvent: {}
+[2.202754] (-) TimerEvent: {}
+[2.303064] (-) TimerEvent: {}
+[2.403398] (-) TimerEvent: {}
+[2.503770] (-) TimerEvent: {}
+[2.604176] (-) TimerEvent: {}
+[2.704662] (-) TimerEvent: {}
+[2.805372] (-) TimerEvent: {}
+[2.906094] (-) TimerEvent: {}
+[3.006842] (-) TimerEvent: {}
+[3.107586] (-) TimerEvent: {}
+[3.208284] (-) TimerEvent: {}
+[3.308974] (-) TimerEvent: {}
+[3.409680] (-) TimerEvent: {}
+[3.510360] (-) TimerEvent: {}
+[3.611072] (-) TimerEvent: {}
+[3.711782] (-) TimerEvent: {}
+[3.812462] (-) TimerEvent: {}
+[3.913199] (-) TimerEvent: {}
+[4.014080] (-) TimerEvent: {}
+[4.114788] (-) TimerEvent: {}
+[4.215495] (-) TimerEvent: {}
+[4.266310] (irobot_create_toolbox) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libirobot_create_toolbox.so\x1b[0m\n'}
+[4.315750] (-) TimerEvent: {}
+[4.416389] (-) TimerEvent: {}
+[4.517106] (-) TimerEvent: {}
+[4.566750] (irobot_create_toolbox) StdoutLine: {'line': b'[100%] Built target irobot_create_toolbox\n'}
+[4.578212] (irobot_create_toolbox) CommandEnded: {'returncode': 0}
+[4.578920] (irobot_create_toolbox) JobProgress: {'identifier': 'irobot_create_toolbox', 'progress': 'install'}
+[4.579296] (irobot_create_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eea/create3_ws/build/irobot_create_toolbox'], 'cwd': '/home/eea/create3_ws/build/irobot_create_toolbox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_toolbox'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.586707] (irobot_create_toolbox) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.587120] (irobot_create_toolbox) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.587428] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/lib/libirobot_create_toolbox.so\n'}
+[4.595520] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/math.hpp\n'}
+[4.603982] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/polar_coordinates.hpp\n'}
+[4.613388] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/sensors/bumpers.hpp\n'}
+[4.617242] (-) TimerEvent: {}
+[4.624042] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/library_path.sh\n'}
+[4.631891] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/library_path.dsv\n'}
+[4.639832] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/package_run_dependencies/irobot_create_toolbox\n'}
+[4.648185] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/parent_prefix_path/irobot_create_toolbox\n'}
+[4.656263] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/ament_prefix_path.sh\n'}
+[4.666496] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/ament_prefix_path.dsv\n'}
+[4.674963] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/path.sh\n'}
+[4.682125] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 16%] Built target Create3Hmi_autogen\n'}
+[4.682909] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/path.dsv\n'}
+[4.690052] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating qrc_Create3Hmi.cpp\x1b[0m\n'}
+[4.690780] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.bash\n'}
+[4.698297] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.sh\n'}
+[4.705560] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.zsh\n'}
+[4.713786] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/qrc_Create3Hmi.cpp.o\x1b[0m\n'}
+[4.714065] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[4.714220] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o\x1b[0m\n'}
+[4.714423] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.dsv\n'}
+[4.717312] (-) TimerEvent: {}
+[4.723308] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/package.dsv\n'}
+[4.732079] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/packages/irobot_create_toolbox\n'}
+[4.740561] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.750281] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.759224] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.767934] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/irobot_create_toolboxConfig.cmake\n'}
+[4.776035] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/irobot_create_toolboxConfig-version.cmake\n'}
+[4.784643] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/package.xml\n'}
+[4.794934] (irobot_create_toolbox) CommandEnded: {'returncode': 0}
+[4.810812] (irobot_create_toolbox) JobEnded: {'identifier': 'irobot_create_toolbox', 'rc': 0}
+[4.811709] (irobot_create_nodes) JobStarted: {'identifier': 'irobot_create_nodes'}
+[4.813463] (irobot_create_gazebo_plugins) JobStarted: {'identifier': 'irobot_create_gazebo_plugins'}
+[4.816900] (irobot_create_ignition_toolbox) JobStarted: {'identifier': 'irobot_create_ignition_toolbox'}
+[4.817572] (-) TimerEvent: {}
+[4.820974] (irobot_create_nodes) JobProgress: {'identifier': 'irobot_create_nodes', 'progress': 'cmake'}
+[4.821383] (irobot_create_nodes) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_nodes'], 'cwd': '/home/eea/create3_ws/build/irobot_create_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_nodes'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble')]), 'shell': False}
+[4.823810] (irobot_create_gazebo_plugins) JobProgress: {'identifier': 'irobot_create_gazebo_plugins', 'progress': 'cmake'}
+[4.824231] (irobot_create_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_gazebo_plugins'], 'cwd': '/home/eea/create3_ws/build/irobot_create_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_gazebo_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble')]), 'shell': False}
+[4.827404] (irobot_create_ignition_toolbox) JobProgress: {'identifier': 'irobot_create_ignition_toolbox', 'progress': 'cmake'}
+[4.828173] (irobot_create_ignition_toolbox) Command: {'cmd': ['/usr/bin/cmake', '/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_ignition_toolbox'], 'cwd': '/home/eea/create3_ws/build/irobot_create_ignition_toolbox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_ignition_toolbox'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble')]), 'shell': False}
+[4.874124] (irobot_create_nodes) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.880862] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.906395] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.917714] (-) TimerEvent: {}
+[4.926487] (irobot_create_nodes) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.932398] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.935945] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.939042] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.984353] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.994130] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.009404] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.017846] (-) TimerEvent: {}
+[5.023094] (irobot_create_nodes) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.023386] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.024031] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.027964] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.029622] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.042096] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.042374] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.042952] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.046277] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.082049] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.093894] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.094216] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.094869] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.099387] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.117975] (-) TimerEvent: {}
+[5.121117] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.133583] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.134144] (irobot_create_nodes) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.134550] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.135216] (irobot_create_nodes) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.138438] (irobot_create_nodes) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.141784] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.142371] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.142556] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.144797] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.207013] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.218077] (-) TimerEvent: {}
+[5.220632] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.221042] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.221831] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.225661] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.307704] (irobot_create_nodes) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.318237] (-) TimerEvent: {}
+[5.348288] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.382934] (irobot_create_nodes) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.410606] (irobot_create_nodes) StdoutLine: {'line': b'-- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)\n'}
+[5.415849] (irobot_create_nodes) StdoutLine: {'line': b'-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[5.418330] (-) TimerEvent: {}
+[5.430115] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.435001] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.457796] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.462784] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.465823] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[5.470707] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.482390] (irobot_create_nodes) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.498381] (irobot_create_nodes) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.499040] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.514457] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.518459] (-) TimerEvent: {}
+[5.520927] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.521529] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[5.531802] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.550060] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.553982] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.558489] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.566257] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.575277] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.577828] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.593034] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.618603] (-) TimerEvent: {}
+[5.639888] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)\n'}
+[5.651329] (irobot_create_nodes) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[5.677116] (irobot_create_nodes) StdoutLine: {'line': b'-- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)\n'}
+[5.701133] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found irobot_create_toolbox: 2.1.0 (/home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake)\n'}
+[5.711610] (irobot_create_nodes) StdoutLine: {'line': b'-- Found irobot_create_toolbox: 2.1.0 (/home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake)\n'}
+[5.717366] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[5.718660] (-) TimerEvent: {}
+[5.734581] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)\n'}
+[5.746471] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.748956] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.755992] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.787468] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.791392] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.792892] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.795856] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.818786] (-) TimerEvent: {}
+[5.833045] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.871665] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.884810] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.906673] (irobot_create_nodes) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.911338] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.918668] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.918826] (-) TimerEvent: {}
+[5.927999] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.952678] (irobot_create_nodes) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.986022] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.986256] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.991212] (irobot_create_ignition_toolbox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.001250] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.016483] (irobot_create_nodes) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.018939] (-) TimerEvent: {}
+[6.028885] (irobot_create_nodes) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.066663] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.067984] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.070916] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.072441] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.118504] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[6.118779] (irobot_create_nodes) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.118946] (irobot_create_nodes) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.119054] (-) TimerEvent: {}
+[6.138786] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.139930] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.148601] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[6.150776] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[6.165764] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[6.183434] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[6.202998] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.206280] (irobot_create_nodes) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.207366] (irobot_create_nodes) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.219180] (-) TimerEvent: {}
+[6.223436] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.245178] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.246157] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[6.248111] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.248315] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.257450] (irobot_create_nodes) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[6.286338] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[6.292349] (irobot_create_nodes) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.297533] (irobot_create_nodes) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[6.310732] (irobot_create_nodes) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[6.312566] (irobot_create_nodes) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.312796] (irobot_create_nodes) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.319291] (-) TimerEvent: {}
+[6.336983] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found irobot_create_toolbox: 2.1.0 (/home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake)\n'}
+[6.347360] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[6.362321] (irobot_create_nodes) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  \n'}
+[6.385098] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[6.413710] (irobot_create_nodes) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.419398] (-) TimerEvent: {}
+[6.432873] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[6.455051] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[6.458625] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.460067] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[6.460445] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[6.465433] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[6.467756] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.479571] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[6.511008] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[6.512316] (irobot_create_nodes) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.515125] (irobot_create_nodes) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_nodes/include\n'}
+[6.515254] (irobot_create_nodes) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.518044] (irobot_create_nodes) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.518164] (irobot_create_nodes) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.518849] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[6.519473] (-) TimerEvent: {}
+[6.519722] (irobot_create_nodes) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.522832] (irobot_create_nodes) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.522956] (irobot_create_nodes) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.523814] (irobot_create_nodes) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.527465] (irobot_create_nodes) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.528456] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[6.534695] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[6.534878] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[6.543918] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[6.544145] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[6.553072] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[6.553325] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[6.559021] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[6.559258] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[6.566307] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[6.566574] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[6.568994] (irobot_create_ignition_toolbox) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.569583] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox/include\n'}
+[6.569719] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.571472] (irobot_create_ignition_toolbox) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.571665] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.572085] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[6.572736] (irobot_create_ignition_toolbox) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.574750] (irobot_create_ignition_toolbox) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.574934] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.575451] (irobot_create_ignition_toolbox) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.578686] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.619612] (-) TimerEvent: {}
+[6.628385] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Generating done\n'}
+[6.647256] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_ignition_toolbox\n'}
+[6.667771] (irobot_create_ignition_toolbox) CommandEnded: {'returncode': 0}
+[6.668563] (irobot_create_ignition_toolbox) JobProgress: {'identifier': 'irobot_create_ignition_toolbox', 'progress': 'build'}
+[6.668946] (irobot_create_ignition_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_ignition_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_ignition_toolbox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_ignition_toolbox'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble')]), 'shell': False}
+[6.720656] (-) TimerEvent: {}
+[6.728010] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/bumper.cpp.o\x1b[0m\n'}
+[6.728338] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/cliff.cpp.o\x1b[0m\n'}
+[6.730623] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_interface_buttons_lib.dir/src/interface_buttons/interface_buttons_node.cpp.o\x1b[0m\n'}
+[6.731714] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_pose_republisher_lib.dir/src/pose_republisher/pose_republisher_node.cpp.o\x1b[0m\n'}
+[6.733092] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/sensors_node.cpp.o\x1b[0m\n'}
+[6.740056] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o\x1b[0m\n'}
+[6.741831] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_opcode.cpp.o\x1b[0m\n'}
+[6.746081] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/mouse.cpp.o\x1b[0m\n'}
+[6.764193] (irobot_create_nodes) StdoutLine: {'line': b'-- Generating done\n'}
+[6.820782] (-) TimerEvent: {}
+[6.828690] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[6.834037] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[6.835621] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[6.883744] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[6.906697] (irobot_create_nodes) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_nodes\n'}
+[6.913686] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[6.920889] (-) TimerEvent: {}
+[6.921232] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[6.957443] (irobot_create_nodes) CommandEnded: {'returncode': 0}
+[6.958535] (irobot_create_nodes) JobProgress: {'identifier': 'irobot_create_nodes', 'progress': 'build'}
+[6.959799] (irobot_create_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_nodes', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_nodes', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_nodes'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble')]), 'shell': False}
+[6.967144] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[7.021041] (-) TimerEvent: {}
+[7.047769] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[7.057463] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[7.096704] (irobot_create_nodes) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/hazard_publisher_lib.dir/src/hazards_vector_publisher.cpp.o\x1b[0m\n'}
+[7.121147] (-) TimerEvent: {}
+[7.121648] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[7.121857] (irobot_create_nodes) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control_node.cpp.o\x1b[0m\n'}
+[7.122029] (irobot_create_nodes) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/ir_intensity_publisher_lib.dir/src/ir_intensity_vector_publisher.cpp.o\x1b[0m\n'}
+[7.124540] (irobot_create_nodes) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/ir_intensity_vector_publisher.dir/rclcpp_components/node_main_ir_intensity_vector_publisher.cpp.o\x1b[0m\n'}
+[7.129266] (irobot_create_nodes) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/hazards_vector_publisher.dir/rclcpp_components/node_main_hazards_vector_publisher.cpp.o\x1b[0m\n'}
+[7.136125] (irobot_create_nodes) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/wheel_status_publisher_lib.dir/src/wheels_publisher.cpp.o\x1b[0m\n'}
+[7.136413] (irobot_create_nodes) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/motion_control.dir/rclcpp_components/node_main_motion_control.cpp.o\x1b[0m\n'}
+[7.141914] (irobot_create_nodes) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/wheel_status_publisher.dir/rclcpp_components/node_main_wheel_status_publisher.cpp.o\x1b[0m\n'}
+[7.221265] (-) TimerEvent: {}
+[7.246637] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[7.252905] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[7.255619] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[7.318316] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.324593] (-) TimerEvent: {}
+[7.336504] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[7.372713] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[7.424713] (-) TimerEvent: {}
+[7.502690] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[7.512607] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[7.512910] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[7.521780] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[7.522220] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[7.528604] (-) TimerEvent: {}
+[7.534682] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[7.577366] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[7.582111] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[7.587580] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[7.588936] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[7.589085] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[7.613769] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[7.614046] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[7.628729] (-) TimerEvent: {}
+[7.729155] (-) TimerEvent: {}
+[7.829670] (-) TimerEvent: {}
+[7.901697] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[7.933635] (-) TimerEvent: {}
+[7.937696] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[7.986173] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[8.037635] (-) TimerEvent: {}
+[8.122704] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[8.137743] (-) TimerEvent: {}
+[8.148731] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[8.197257] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[8.237872] (-) TimerEvent: {}
+[8.332848] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[8.333642] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[8.338561] (-) TimerEvent: {}
+[8.339368] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[8.339581] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[8.350268] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[8.355398] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[8.399854] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[8.438727] (-) TimerEvent: {}
+[8.539298] (-) TimerEvent: {}
+[8.646637] (-) TimerEvent: {}
+[8.747166] (-) TimerEvent: {}
+[8.793713] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.847272] (-) TimerEvent: {}
+[8.947789] (-) TimerEvent: {}
+[9.048289] (-) TimerEvent: {}
+[9.148856] (-) TimerEvent: {}
+[9.251642] (-) TimerEvent: {}
+[9.274796] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.281143] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/eea/create3_ws/src/create3_sim/irobot_create_gazebo/irobot_create_gazebo_plugins/include\n'}
+[9.281414] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.283448] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[9.283756] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[9.297708] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.297958] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.298088] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.309793] (irobot_create_gazebo_plugins) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.321749] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.351757] (-) TimerEvent: {}
+[9.452170] (-) TimerEvent: {}
+[9.552711] (-) TimerEvent: {}
+[9.655653] (-) TimerEvent: {}
+[9.756225] (-) TimerEvent: {}
+[9.856762] (-) TimerEvent: {}
+[9.957202] (-) TimerEvent: {}
+[10.035659] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Generating done\n'}
+[10.057349] (-) TimerEvent: {}
+[10.114437] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'-- Build files have been written to: /home/eea/create3_ws/build/irobot_create_gazebo_plugins\n'}
+[10.157470] (-) TimerEvent: {}
+[10.196803] (irobot_create_gazebo_plugins) CommandEnded: {'returncode': 0}
+[10.198173] (irobot_create_gazebo_plugins) JobProgress: {'identifier': 'irobot_create_gazebo_plugins', 'progress': 'build'}
+[10.198223] (irobot_create_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_gazebo_plugins', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_gazebo_plugins', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eea'), ('XDG_SESSION_TYPE', 'wayland'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eea'), ('OLDPWD', '/home/eea/create3_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1538'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eea'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eea'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/eea-OptiPlex-9020:@/tmp/.ICE-unix/1538,unix/eea-OptiPlex-9020:/tmp/.ICE-unix/1538'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/380cb9a3_4eb2_413a_b649_9c5ae43bf28c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7CL0X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eea/create3_ws/build/irobot_create_gazebo_plugins'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=052480666a8c51d071c98942674dbe65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble')]), 'shell': False}
+[10.257617] (-) TimerEvent: {}
+[10.358169] (-) TimerEvent: {}
+[10.404637] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros_create_helpers.dir/src/gazebo_ros_helpers.cpp.o\x1b[0m\n'}
+[10.458296] (-) TimerEvent: {}
+[10.562646] (-) TimerEvent: {}
+[10.663089] (-) TimerEvent: {}
+[10.763509] (-) TimerEvent: {}
+[10.863962] (-) TimerEvent: {}
+[10.964430] (-) TimerEvent: {}
+[11.064897] (-) TimerEvent: {}
+[11.165367] (-) TimerEvent: {}
+[11.267631] (-) TimerEvent: {}
+[11.368113] (-) TimerEvent: {}
+[11.468530] (-) TimerEvent: {}
+[11.571629] (-) TimerEvent: {}
+[11.672073] (-) TimerEvent: {}
+[11.772509] (-) TimerEvent: {}
+[11.873640] (-) TimerEvent: {}
+[11.974101] (-) TimerEvent: {}
+[12.076818] (-) TimerEvent: {}
+[12.179631] (-) TimerEvent: {}
+[12.280058] (-) TimerEvent: {}
+[12.380506] (-) TimerEvent: {}
+[12.484635] (-) TimerEvent: {}
+[12.585081] (-) TimerEvent: {}
+[12.685494] (-) TimerEvent: {}
+[12.785971] (-) TimerEvent: {}
+[12.889632] (-) TimerEvent: {}
+[12.990057] (-) TimerEvent: {}
+[13.093644] (-) TimerEvent: {}
+[13.194086] (-) TimerEvent: {}
+[13.298639] (-) TimerEvent: {}
+[13.399048] (-) TimerEvent: {}
+[13.499453] (-) TimerEvent: {}
+[13.603638] (-) TimerEvent: {}
+[13.706639] (-) TimerEvent: {}
+[13.809635] (-) TimerEvent: {}
+[13.910068] (-) TimerEvent: {}
+[14.010587] (-) TimerEvent: {}
+[14.114648] (-) TimerEvent: {}
+[14.218639] (-) TimerEvent: {}
+[14.319073] (-) TimerEvent: {}
+[14.419515] (-) TimerEvent: {}
+[14.519938] (-) TimerEvent: {}
+[14.621840] (-) TimerEvent: {}
+[14.722496] (-) TimerEvent: {}
+[14.823067] (-) TimerEvent: {}
+[14.940712] (-) TimerEvent: {}
+[15.047661] (-) TimerEvent: {}
+[15.148109] (-) TimerEvent: {}
+[15.248579] (-) TimerEvent: {}
+[15.349069] (-) TimerEvent: {}
+[15.449491] (-) TimerEvent: {}
+[15.552870] (-) TimerEvent: {}
+[15.653431] (-) TimerEvent: {}
+[15.753868] (-) TimerEvent: {}
+[15.854291] (-) TimerEvent: {}
+[15.954713] (-) TimerEvent: {}
+[16.056628] (-) TimerEvent: {}
+[16.157038] (-) TimerEvent: {}
+[16.257471] (-) TimerEvent: {}
+[16.357926] (-) TimerEvent: {}
+[16.463675] (-) TimerEvent: {}
+[16.564094] (-) TimerEvent: {}
+[16.668631] (-) TimerEvent: {}
+[16.769048] (-) TimerEvent: {}
+[16.869452] (-) TimerEvent: {}
+[16.969895] (-) TimerEvent: {}
+[17.070359] (-) TimerEvent: {}
+[17.170904] (-) TimerEvent: {}
+[17.271381] (-) TimerEvent: {}
+[17.371808] (-) TimerEvent: {}
+[17.472521] (-) TimerEvent: {}
+[17.575759] (-) TimerEvent: {}
+[17.676198] (-) TimerEvent: {}
+[17.780643] (-) TimerEvent: {}
+[17.881216] (-) TimerEvent: {}
+[17.981723] (-) TimerEvent: {}
+[18.082289] (-) TimerEvent: {}
+[18.182967] (-) TimerEvent: {}
+[18.283382] (-) TimerEvent: {}
+[18.384504] (-) TimerEvent: {}
+[18.485209] (-) TimerEvent: {}
+[18.586045] (-) TimerEvent: {}
+[18.687988] (-) TimerEvent: {}
+[18.790977] (-) TimerEvent: {}
+[18.892416] (-) TimerEvent: {}
+[18.993592] (-) TimerEvent: {}
+[19.095617] (-) TimerEvent: {}
+[19.203085] (-) TimerEvent: {}
+[19.209774] (irobot_create_nodes) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking CXX executable motion_control\x1b[0m\n'}
+[19.247697] (irobot_create_nodes) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX executable hazards_vector_publisher\x1b[0m\n'}
+[19.306411] (-) TimerEvent: {}
+[19.407301] (-) TimerEvent: {}
+[19.507992] (-) TimerEvent: {}
+[19.608995] (-) TimerEvent: {}
+[19.710234] (-) TimerEvent: {}
+[19.812069] (-) TimerEvent: {}
+[19.913374] (-) TimerEvent: {}
+[20.015108] (-) TimerEvent: {}
+[20.116487] (-) TimerEvent: {}
+[20.136707] (irobot_create_nodes) StdoutLine: {'line': b'[ 27%] Built target motion_control\n'}
+[20.183930] (irobot_create_nodes) StdoutLine: {'line': b'[ 27%] Built target hazards_vector_publisher\n'}
+[20.198725] (irobot_create_nodes) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/robot_state_lib.dir/src/robot_state.cpp.o\x1b[0m\n'}
+[20.216783] (-) TimerEvent: {}
+[20.242617] (irobot_create_nodes) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/robot_state.dir/rclcpp_components/node_main_robot_state.cpp.o\x1b[0m\n'}
+[20.317187] (-) TimerEvent: {}
+[20.420259] (-) TimerEvent: {}
+[20.523656] (-) TimerEvent: {}
+[20.624186] (-) TimerEvent: {}
+[20.727642] (-) TimerEvent: {}
+[20.828165] (-) TimerEvent: {}
+[20.931643] (-) TimerEvent: {}
+[21.032161] (-) TimerEvent: {}
+[21.132702] (-) TimerEvent: {}
+[21.233177] (-) TimerEvent: {}
+[21.333629] (-) TimerEvent: {}
+[21.437642] (-) TimerEvent: {}
+[21.538130] (-) TimerEvent: {}
+[21.638640] (-) TimerEvent: {}
+[21.739230] (-) TimerEvent: {}
+[21.839765] (-) TimerEvent: {}
+[21.940291] (-) TimerEvent: {}
+[22.046659] (-) TimerEvent: {}
+[22.147655] (-) TimerEvent: {}
+[22.248801] (-) TimerEvent: {}
+[22.337298] (irobot_create_nodes) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX executable ir_intensity_vector_publisher\x1b[0m\n'}
+[22.349752] (-) TimerEvent: {}
+[22.455650] (-) TimerEvent: {}
+[22.556099] (-) TimerEvent: {}
+[22.656538] (-) TimerEvent: {}
+[22.686914] (irobot_create_nodes) StdoutLine: {'line': b'[ 35%] Built target ir_intensity_vector_publisher\n'}
+[22.756641] (-) TimerEvent: {}
+[22.786376] (irobot_create_nodes) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/ui_mgr_lib.dir/src/ui_mgr.cpp.o\x1b[0m\n'}
+[22.856772] (-) TimerEvent: {}
+[22.957197] (-) TimerEvent: {}
+[23.059772] (-) TimerEvent: {}
+[23.160295] (-) TimerEvent: {}
+[23.262914] (-) TimerEvent: {}
+[23.286725] (irobot_create_nodes) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable wheel_status_publisher\x1b[0m\n'}
+[23.363614] (-) TimerEvent: {}
+[23.467643] (-) TimerEvent: {}
+[23.561646] (irobot_create_nodes) StdoutLine: {'line': b'[ 40%] Built target wheel_status_publisher\n'}
+[23.567755] (-) TimerEvent: {}
+[23.669625] (-) TimerEvent: {}
+[23.669992] (irobot_create_nodes) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ui_mgr.dir/rclcpp_components/node_main_ui_mgr.cpp.o\x1b[0m\n'}
+[23.769738] (-) TimerEvent: {}
+[23.870252] (-) TimerEvent: {}
+[23.970759] (-) TimerEvent: {}
+[24.071337] (-) TimerEvent: {}
+[24.177636] (-) TimerEvent: {}
+[24.281649] (-) TimerEvent: {}
+[24.382236] (-) TimerEvent: {}
+[24.482819] (-) TimerEvent: {}
+[24.583320] (-) TimerEvent: {}
+[24.689641] (-) TimerEvent: {}
+[24.790196] (-) TimerEvent: {}
+[24.890765] (-) TimerEvent: {}
+[24.991182] (-) TimerEvent: {}
+[25.095638] (-) TimerEvent: {}
+[25.196218] (-) TimerEvent: {}
+[25.299301] (-) TimerEvent: {}
+[25.399854] (-) TimerEvent: {}
+[25.500282] (-) TimerEvent: {}
+[25.600883] (-) TimerEvent: {}
+[25.708417] (-) TimerEvent: {}
+[25.808950] (-) TimerEvent: {}
+[25.912905] (-) TimerEvent: {}
+[26.013484] (-) TimerEvent: {}
+[26.113898] (-) TimerEvent: {}
+[26.214650] (-) TimerEvent: {}
+[26.315021] (-) TimerEvent: {}
+[26.418577] (-) TimerEvent: {}
+[26.518968] (-) TimerEvent: {}
+[26.625315] (-) TimerEvent: {}
+[26.725719] (-) TimerEvent: {}
+[26.829633] (-) TimerEvent: {}
+[26.930024] (-) TimerEvent: {}
+[27.030326] (-) TimerEvent: {}
+[27.131779] (-) TimerEvent: {}
+[27.232282] (-) TimerEvent: {}
+[27.333632] (-) TimerEvent: {}
+[27.434268] (-) TimerEvent: {}
+[27.534759] (-) TimerEvent: {}
+[27.636633] (-) TimerEvent: {}
+[27.737014] (-) TimerEvent: {}
+[27.837309] (-) TimerEvent: {}
+[27.939575] (-) TimerEvent: {}
+[28.039934] (-) TimerEvent: {}
+[28.140329] (-) TimerEvent: {}
+[28.240607] (-) TimerEvent: {}
+[28.341391] (-) TimerEvent: {}
+[28.443699] (-) TimerEvent: {}
+[28.544811] (-) TimerEvent: {}
+[28.649678] (-) TimerEvent: {}
+[28.750065] (-) TimerEvent: {}
+[28.851210] (-) TimerEvent: {}
+[28.952846] (-) TimerEvent: {}
+[29.054617] (-) TimerEvent: {}
+[29.156039] (-) TimerEvent: {}
+[29.258201] (-) TimerEvent: {}
+[29.361218] (-) TimerEvent: {}
+[29.534780] (-) TimerEvent: {}
+[29.867384] (-) TimerEvent: {}
+[31.344668] (-) TimerEvent: {}
+[34.420179] (-) TimerEvent: {}
+[156.246861] (-) TimerEvent: {}

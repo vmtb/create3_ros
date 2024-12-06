@@ -1,0 +1,373 @@
+[0.000000] (-) TimerEvent: {}
+[0.000142] (irobot_create_control) JobQueued: {'identifier': 'irobot_create_control', 'dependencies': OrderedDict()}
+[0.000245] (irobot_create_description) JobQueued: {'identifier': 'irobot_create_description', 'dependencies': OrderedDict()}
+[0.000265] (irobot_create_ignition_plugins) JobQueued: {'identifier': 'irobot_create_ignition_plugins', 'dependencies': OrderedDict()}
+[0.000290] (irobot_create_toolbox) JobQueued: {'identifier': 'irobot_create_toolbox', 'dependencies': OrderedDict()}
+[0.000304] (irobot_create_gazebo_plugins) JobQueued: {'identifier': 'irobot_create_gazebo_plugins', 'dependencies': OrderedDict([('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox')])}
+[0.000323] (irobot_create_ignition_toolbox) JobQueued: {'identifier': 'irobot_create_ignition_toolbox', 'dependencies': OrderedDict([('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox')])}
+[0.000339] (irobot_create_nodes) JobQueued: {'identifier': 'irobot_create_nodes', 'dependencies': OrderedDict([('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox')])}
+[0.000354] (irobot_create_common_bringup) JobQueued: {'identifier': 'irobot_create_common_bringup', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes')])}
+[0.000376] (irobot_create_gazebo_bringup) JobQueued: {'identifier': 'irobot_create_gazebo_bringup', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_gazebo_plugins', '/home/eea/create3_ws/install/irobot_create_gazebo_plugins'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup')])}
+[0.000414] (irobot_create_ignition_bringup) JobQueued: {'identifier': 'irobot_create_ignition_bringup', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_ignition_plugins', '/home/eea/create3_ws/install/irobot_create_ignition_plugins'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_ignition_toolbox', '/home/eea/create3_ws/install/irobot_create_ignition_toolbox'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup')])}
+[0.000488] (irobot_create_gazebo_sim) JobQueued: {'identifier': 'irobot_create_gazebo_sim', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_gazebo_plugins', '/home/eea/create3_ws/install/irobot_create_gazebo_plugins'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup'), ('irobot_create_gazebo_bringup', '/home/eea/create3_ws/install/irobot_create_gazebo_bringup')])}
+[0.000513] (irobot_create_ignition_sim) JobQueued: {'identifier': 'irobot_create_ignition_sim', 'dependencies': OrderedDict([('irobot_create_control', '/home/eea/create3_ws/install/irobot_create_control'), ('irobot_create_description', '/home/eea/create3_ws/install/irobot_create_description'), ('irobot_create_ignition_plugins', '/home/eea/create3_ws/install/irobot_create_ignition_plugins'), ('irobot_create_toolbox', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('irobot_create_ignition_toolbox', '/home/eea/create3_ws/install/irobot_create_ignition_toolbox'), ('irobot_create_nodes', '/home/eea/create3_ws/install/irobot_create_nodes'), ('irobot_create_common_bringup', '/home/eea/create3_ws/install/irobot_create_common_bringup'), ('irobot_create_ignition_bringup', '/home/eea/create3_ws/install/irobot_create_ignition_bringup')])}
+[0.000583] (irobot_create_toolbox) JobStarted: {'identifier': 'irobot_create_toolbox'}
+[0.004002] (irobot_create_control) JobStarted: {'identifier': 'irobot_create_control'}
+[0.005296] (irobot_create_description) JobStarted: {'identifier': 'irobot_create_description'}
+[0.006443] (irobot_create_ignition_plugins) JobStarted: {'identifier': 'irobot_create_ignition_plugins'}
+[0.008957] (irobot_create_toolbox) JobProgress: {'identifier': 'irobot_create_toolbox', 'progress': 'cmake'}
+[0.009488] (irobot_create_toolbox) JobProgress: {'identifier': 'irobot_create_toolbox', 'progress': 'build'}
+[0.010141] (irobot_create_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_toolbox', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_toolbox'), ('COLCON', '1')]), 'shell': False}
+[0.012019] (irobot_create_control) JobProgress: {'identifier': 'irobot_create_control', 'progress': 'cmake'}
+[0.012298] (irobot_create_control) JobProgress: {'identifier': 'irobot_create_control', 'progress': 'build'}
+[0.012913] (irobot_create_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_control', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_control', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_control'), ('COLCON', '1')]), 'shell': False}
+[0.014166] (irobot_create_description) JobProgress: {'identifier': 'irobot_create_description', 'progress': 'cmake'}
+[0.014344] (irobot_create_description) JobProgress: {'identifier': 'irobot_create_description', 'progress': 'build'}
+[0.014928] (irobot_create_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_description', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_description', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_description'), ('COLCON', '1')]), 'shell': False}
+[0.036506] (irobot_create_ignition_plugins) JobProgress: {'identifier': 'irobot_create_ignition_plugins', 'progress': 'cmake'}
+[0.037199] (irobot_create_ignition_plugins) JobProgress: {'identifier': 'irobot_create_ignition_plugins', 'progress': 'build'}
+[0.037572] (irobot_create_ignition_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_ignition_plugins', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_ignition_plugins', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_ignition_plugins'), ('COLCON', '1')]), 'shell': False}
+[0.058657] (irobot_create_control) CommandEnded: {'returncode': 0}
+[0.060578] (irobot_create_control) JobProgress: {'identifier': 'irobot_create_control', 'progress': 'install'}
+[0.068230] (irobot_create_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eea/create3_ws/build/irobot_create_control'], 'cwd': '/home/eea/create3_ws/build/irobot_create_control', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_control'), ('COLCON', '1')]), 'shell': False}
+[0.069714] (irobot_create_description) CommandEnded: {'returncode': 0}
+[0.070302] (irobot_create_description) JobProgress: {'identifier': 'irobot_create_description', 'progress': 'install'}
+[0.070501] (irobot_create_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eea/create3_ws/build/irobot_create_description'], 'cwd': '/home/eea/create3_ws/build/irobot_create_description', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_description'), ('COLCON', '1')]), 'shell': False}
+[0.075887] (irobot_create_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.077023] (irobot_create_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.077741] (irobot_create_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.078819] (irobot_create_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.079342] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control//launch/include/control.py\n'}
+[0.079648] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/body_visual.dae\n'}
+[0.079932] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/bumper_collision.dae\n'}
+[0.080050] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control//config/control.yaml\n'}
+[0.080195] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/bumper_visual.dae\n'}
+[0.081004] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/dock/visual.dae\n'}
+[0.081257] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/package_run_dependencies/irobot_create_control\n'}
+[0.081352] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/bumper.urdf.xacro\n'}
+[0.081468] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/button.urdf.xacro\n'}
+[0.081571] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/caster.urdf.xacro\n'}
+[0.081690] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/common_properties.urdf.xacro\n'}
+[0.081775] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/create3.urdf.xacro\n'}
+[0.081921] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/parent_prefix_path/irobot_create_control\n'}
+[0.081992] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/dock/ir_emitter.urdf.xacro\n'}
+[0.082086] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/dock/standard_dock.urdf.xacro\n'}
+[0.082186] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/cliff_sensor.urdf.xacro\n'}
+[0.082271] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/imu.urdf.xacro\n'}
+[0.082413] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/ir_intensity.urdf.xacro\n'}
+[0.082485] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/ament_prefix_path.sh\n'}
+[0.082577] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/ir_opcode_receivers.urdf.xacro\n'}
+[0.082661] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/optical_mouse.urdf.xacro\n'}
+[0.082774] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel.urdf.xacro\n'}
+[0.082907] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel_drop.urdf.xacro\n'}
+[0.083026] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel_with_wheeldrop.urdf.xacro\n'}
+[0.083758] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/ament_prefix_path.dsv\n'}
+[0.084110] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/path.sh\n'}
+[0.084355] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/package_run_dependencies/irobot_create_description\n'}
+[0.084480] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/environment/path.dsv\n'}
+[0.084816] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.bash\n'}
+[0.084960] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/parent_prefix_path/irobot_create_description\n'}
+[0.085376] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.sh\n'}
+[0.086722] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.zsh\n'}
+[0.086852] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/ament_prefix_path.sh\n'}
+[0.087054] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/local_setup.dsv\n'}
+[0.087164] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/ament_prefix_path.dsv\n'}
+[0.087258] (irobot_create_control) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/package.dsv\n'}
+[0.087458] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/path.sh\n'}
+[0.087831] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/path.dsv\n'}
+[0.088002] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.bash\n'}
+[0.088169] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.sh\n'}
+[0.088340] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.zsh\n'}
+[0.088504] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.dsv\n'}
+[0.088674] (irobot_create_description) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/package.dsv\n'}
+[0.095565] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/ament_index/resource_index/packages/irobot_create_control\n'}
+[0.095924] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/packages/irobot_create_description\n'}
+[0.096063] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/cmake/irobot_create_controlConfig.cmake\n'}
+[0.096201] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/cmake/irobot_create_descriptionConfig.cmake\n'}
+[0.096289] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/cmake/irobot_create_controlConfig-version.cmake\n'}
+[0.096382] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/cmake/irobot_create_descriptionConfig-version.cmake\n'}
+[0.096647] (irobot_create_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_control/share/irobot_create_control/package.xml\n'}
+[0.096773] (irobot_create_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/package.xml\n'}
+[0.098886] (irobot_create_control) CommandEnded: {'returncode': 0}
+[0.099265] (-) TimerEvent: {}
+[0.102409] (irobot_create_toolbox) StdoutLine: {'line': b'[100%] Built target irobot_create_toolbox\n'}
+[0.104800] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mAutomatic MOC for target Create3Hmi\x1b[0m\n'}
+[0.120121] (irobot_create_control) JobEnded: {'identifier': 'irobot_create_control', 'rc': 0}
+[0.121572] (irobot_create_description) CommandEnded: {'returncode': 0}
+[0.132939] (irobot_create_description) JobEnded: {'identifier': 'irobot_create_description', 'rc': 0}
+[0.133311] (irobot_create_toolbox) CommandEnded: {'returncode': 0}
+[0.134299] (irobot_create_toolbox) JobProgress: {'identifier': 'irobot_create_toolbox', 'progress': 'install'}
+[0.134969] (irobot_create_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eea/create3_ws/build/irobot_create_toolbox'], 'cwd': '/home/eea/create3_ws/build/irobot_create_toolbox', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_toolbox'), ('COLCON', '1')]), 'shell': False}
+[0.141657] (irobot_create_toolbox) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.141888] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 16%] Built target Create3Hmi_autogen\n'}
+[0.142348] (irobot_create_toolbox) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.143254] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/lib/libirobot_create_toolbox.so\n'}
+[0.144234] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/math.hpp\n'}
+[0.144548] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/polar_coordinates.hpp\n'}
+[0.145097] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/sensors/bumpers.hpp\n'}
+[0.146008] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/library_path.sh\n'}
+[0.146346] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/library_path.dsv\n'}
+[0.147218] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/package_run_dependencies/irobot_create_toolbox\n'}
+[0.147751] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/parent_prefix_path/irobot_create_toolbox\n'}
+[0.148103] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/ament_prefix_path.sh\n'}
+[0.148438] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/ament_prefix_path.dsv\n'}
+[0.149050] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/path.sh\n'}
+[0.149266] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/path.dsv\n'}
+[0.149536] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.bash\n'}
+[0.149783] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.sh\n'}
+[0.150182] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.zsh\n'}
+[0.150588] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.dsv\n'}
+[0.150703] (irobot_create_toolbox) StdoutLine: {'line': b'-- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/package.dsv\n'}
+[0.159010] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/packages/irobot_create_toolbox\n'}
+[0.159546] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.160328] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.160827] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.161121] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/irobot_create_toolboxConfig.cmake\n'}
+[0.161278] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/irobot_create_toolboxConfig-version.cmake\n'}
+[0.161488] (irobot_create_toolbox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/package.xml\n'}
+[0.161728] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o\x1b[0m\n'}
+[0.161862] (irobot_create_ignition_plugins) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[0.163422] (irobot_create_toolbox) CommandEnded: {'returncode': 0}
+[0.180858] (irobot_create_toolbox) JobEnded: {'identifier': 'irobot_create_toolbox', 'rc': 0}
+[0.181574] (irobot_create_nodes) JobStarted: {'identifier': 'irobot_create_nodes'}
+[0.182137] (irobot_create_gazebo_plugins) JobStarted: {'identifier': 'irobot_create_gazebo_plugins'}
+[0.183359] (irobot_create_ignition_toolbox) JobStarted: {'identifier': 'irobot_create_ignition_toolbox'}
+[0.187658] (irobot_create_gazebo_plugins) JobProgress: {'identifier': 'irobot_create_gazebo_plugins', 'progress': 'cmake'}
+[0.191071] (irobot_create_gazebo_plugins) JobProgress: {'identifier': 'irobot_create_gazebo_plugins', 'progress': 'build'}
+[0.191966] (irobot_create_gazebo_plugins) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_gazebo_plugins', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_gazebo_plugins', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_gazebo_plugins'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox')]), 'shell': False}
+[0.193000] (irobot_create_nodes) JobProgress: {'identifier': 'irobot_create_nodes', 'progress': 'cmake'}
+[0.194156] (irobot_create_nodes) JobProgress: {'identifier': 'irobot_create_nodes', 'progress': 'build'}
+[0.194876] (irobot_create_nodes) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_nodes', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_nodes', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_nodes'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox')]), 'shell': False}
+[0.196069] (irobot_create_ignition_toolbox) JobProgress: {'identifier': 'irobot_create_ignition_toolbox', 'progress': 'cmake'}
+[0.196801] (irobot_create_ignition_toolbox) JobProgress: {'identifier': 'irobot_create_ignition_toolbox', 'progress': 'build'}
+[0.197090] (irobot_create_ignition_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eea/create3_ws/build/irobot_create_ignition_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/eea/create3_ws/build/irobot_create_ignition_toolbox', 'env': OrderedDict([('SUDO_GID', '1000'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LD_LIBRARY_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox/lib'), ('HOME', '/root'), ('COLORTERM', 'truecolor'), ('SUDO_UID', '1000'), ('LOGNAME', 'root'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('DISPLAY', ':0'), ('LANG', 'fr_FR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6XJ1X2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUDO_COMMAND', '/usr/bin/colcon build'), ('AMENT_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox'), ('SHELL', '/bin/bash'), ('SUDO_USER', 'eea'), ('PWD', '/home/eea/create3_ws/build/irobot_create_ignition_toolbox'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eea/create3_ws/install/irobot_create_toolbox')]), 'shell': False}
+[0.199352] (-) TimerEvent: {}
+[0.282351] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/cliff.cpp.o\x1b[0m\n'}
+[0.282774] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_pose_republisher_lib.dir/src/pose_republisher/pose_republisher_node.cpp.o\x1b[0m\n'}
+[0.282960] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/bumper.cpp.o\x1b[0m\n'}
+[0.283080] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/sensors_node.cpp.o\x1b[0m\n'}
+[0.286543] (irobot_create_nodes) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/wheel_status_publisher_lib.dir/src/wheels_publisher.cpp.o\x1b[0m\n'}
+[0.287265] (irobot_create_nodes) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/hazard_publisher_lib.dir/src/hazards_vector_publisher.cpp.o\x1b[0m\n'}
+[0.287385] (irobot_create_nodes) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/ir_intensity_publisher_lib.dir/src/ir_intensity_vector_publisher.cpp.o\x1b[0m\n'}
+[0.287687] (irobot_create_gazebo_plugins) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/gazebo_ros_create_helpers.dir/src/gazebo_ros_helpers.cpp.o\x1b[0m\n'}
+[0.288164] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o\x1b[0m\n'}
+[0.291293] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_opcode.cpp.o\x1b[0m\n'}
+[0.292980] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/mouse.cpp.o\x1b[0m\n'}
+[0.299522] (-) TimerEvent: {}
+[0.301479] (irobot_create_ignition_toolbox) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/irobot_create_ignition_interface_buttons_lib.dir/src/interface_buttons/interface_buttons_node.cpp.o\x1b[0m\n'}
+[0.301802] (irobot_create_nodes) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control_node.cpp.o\x1b[0m\n'}
+[0.317107] (irobot_create_nodes) StdoutLine: {'line': b'[ 21%] Built target ir_intensity_vector_publisher\n'}
+[0.317434] (irobot_create_nodes) StdoutLine: {'line': b'[ 21%] Built target wheel_status_publisher\n'}
+[0.319572] (irobot_create_nodes) StdoutLine: {'line': b'[ 27%] Built target motion_control\n'}
+[0.339107] (irobot_create_nodes) StdoutLine: {'line': b'[ 32%] Built target hazards_vector_publisher\n'}
+[0.339439] (irobot_create_nodes) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/docking_behavior.cpp.o\x1b[0m\n'}
+[0.361072] (irobot_create_nodes) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_state\x1b[0m\n'}
+[0.390712] (irobot_create_nodes) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/robot_state_lib.dir/src/robot_state.cpp.o\x1b[0m\n'}
+[0.390948] (irobot_create_nodes) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ui_mgr_lib.dir/src/ui_mgr.cpp.o\x1b[0m\n'}
+[0.396959] (irobot_create_nodes) StdoutLine: {'line': b'[ 45%] Built target robot_state\n'}
+[0.399603] (-) TimerEvent: {}
+[0.419454] (irobot_create_nodes) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/motion_control_lib.dir/src/motion_control/drive_goal_behaviors.cpp.o\x1b[0m\n'}
+[0.499724] (-) TimerEvent: {}
+[0.600225] (-) TimerEvent: {}
+[0.706469] (-) TimerEvent: {}
+[0.806858] (-) TimerEvent: {}
+[0.907270] (-) TimerEvent: {}
+[1.007723] (-) TimerEvent: {}
+[1.108138] (-) TimerEvent: {}
+[1.210481] (-) TimerEvent: {}
+[1.310902] (-) TimerEvent: {}
+[1.411309] (-) TimerEvent: {}
+[1.515489] (-) TimerEvent: {}
+[1.616175] (-) TimerEvent: {}
+[1.716785] (-) TimerEvent: {}
+[1.820475] (-) TimerEvent: {}
+[1.920913] (-) TimerEvent: {}
+[2.021342] (-) TimerEvent: {}
+[2.121760] (-) TimerEvent: {}
+[2.222361] (-) TimerEvent: {}
+[2.326504] (-) TimerEvent: {}
+[2.427116] (-) TimerEvent: {}
+[2.527755] (-) TimerEvent: {}
+[2.628252] (-) TimerEvent: {}
+[2.728775] (-) TimerEvent: {}
+[2.832494] (-) TimerEvent: {}
+[2.936485] (-) TimerEvent: {}
+[3.036912] (-) TimerEvent: {}
+[3.137355] (-) TimerEvent: {}
+[3.237791] (-) TimerEvent: {}
+[3.338199] (-) TimerEvent: {}
+[3.440490] (-) TimerEvent: {}
+[3.542541] (-) TimerEvent: {}
+[3.645512] (-) TimerEvent: {}
+[3.748486] (-) TimerEvent: {}
+[3.848920] (-) TimerEvent: {}
+[3.949348] (-) TimerEvent: {}
+[4.049766] (-) TimerEvent: {}
+[4.154492] (-) TimerEvent: {}
+[4.254911] (-) TimerEvent: {}
+[4.355344] (-) TimerEvent: {}
+[4.455785] (-) TimerEvent: {}
+[4.556276] (-) TimerEvent: {}
+[4.662476] (-) TimerEvent: {}
+[4.762889] (-) TimerEvent: {}
+[4.863810] (-) TimerEvent: {}
+[4.964372] (-) TimerEvent: {}
+[5.067518] (-) TimerEvent: {}
+[5.168108] (-) TimerEvent: {}
+[5.271493] (-) TimerEvent: {}
+[5.373491] (-) TimerEvent: {}
+[5.474097] (-) TimerEvent: {}
+[5.574686] (-) TimerEvent: {}
+[5.675278] (-) TimerEvent: {}
+[5.775902] (-) TimerEvent: {}
+[5.876493] (-) TimerEvent: {}
+[5.979498] (-) TimerEvent: {}
+[6.080120] (-) TimerEvent: {}
+[6.182489] (-) TimerEvent: {}
+[6.283124] (-) TimerEvent: {}
+[6.383714] (-) TimerEvent: {}
+[6.484303] (-) TimerEvent: {}
+[6.587487] (-) TimerEvent: {}
+[6.687932] (-) TimerEvent: {}
+[6.788489] (-) TimerEvent: {}
+[6.893489] (-) TimerEvent: {}
+[6.997485] (-) TimerEvent: {}
+[7.098066] (-) TimerEvent: {}
+[7.201495] (-) TimerEvent: {}
+[7.302098] (-) TimerEvent: {}
+[7.402713] (-) TimerEvent: {}
+[7.503138] (-) TimerEvent: {}
+[7.603747] (-) TimerEvent: {}
+[7.704356] (-) TimerEvent: {}
+[7.804973] (-) TimerEvent: {}
+[7.908493] (-) TimerEvent: {}
+[8.009112] (-) TimerEvent: {}
+[8.109703] (-) TimerEvent: {}
+[8.210319] (-) TimerEvent: {}
+[8.310950] (-) TimerEvent: {}
+[8.411373] (-) TimerEvent: {}
+[8.512055] (-) TimerEvent: {}
+[8.612771] (-) TimerEvent: {}
+[8.713385] (-) TimerEvent: {}
+[8.814004] (-) TimerEvent: {}
+[8.922483] (-) TimerEvent: {}
+[9.023035] (-) TimerEvent: {}
+[9.123672] (-) TimerEvent: {}
+[9.226494] (-) TimerEvent: {}
+[9.326916] (-) TimerEvent: {}
+[9.427501] (-) TimerEvent: {}
+[9.528152] (-) TimerEvent: {}
+[9.628758] (-) TimerEvent: {}
+[9.732486] (-) TimerEvent: {}
+[9.833089] (-) TimerEvent: {}
+[9.933665] (-) TimerEvent: {}
+[10.034363] (-) TimerEvent: {}
+[10.134945] (-) TimerEvent: {}
+[10.235351] (-) TimerEvent: {}
+[10.336500] (-) TimerEvent: {}
+[10.440494] (-) TimerEvent: {}
+[10.540930] (-) TimerEvent: {}
+[10.641349] (-) TimerEvent: {}
+[10.741785] (-) TimerEvent: {}
+[10.842510] (-) TimerEvent: {}
+[10.948506] (-) TimerEvent: {}
+[11.052494] (-) TimerEvent: {}
+[11.153083] (-) TimerEvent: {}
+[11.253640] (-) TimerEvent: {}
+[11.356498] (-) TimerEvent: {}
+[11.456936] (-) TimerEvent: {}
+[11.558513] (-) TimerEvent: {}
+[11.661485] (-) TimerEvent: {}
+[11.762077] (-) TimerEvent: {}
+[11.862576] (-) TimerEvent: {}
+[11.963175] (-) TimerEvent: {}
+[12.065492] (-) TimerEvent: {}
+[12.166117] (-) TimerEvent: {}
+[12.266560] (-) TimerEvent: {}
+[12.367180] (-) TimerEvent: {}
+[12.471497] (-) TimerEvent: {}
+[12.575498] (-) TimerEvent: {}
+[12.676109] (-) TimerEvent: {}
+[12.776726] (-) TimerEvent: {}
+[12.880502] (-) TimerEvent: {}
+[12.981052] (-) TimerEvent: {}
+[13.082492] (-) TimerEvent: {}
+[13.182905] (-) TimerEvent: {}
+[13.284490] (-) TimerEvent: {}
+[13.385080] (-) TimerEvent: {}
+[13.485488] (-) TimerEvent: {}
+[13.585937] (-) TimerEvent: {}
+[13.687522] (-) TimerEvent: {}
+[13.788196] (-) TimerEvent: {}
+[13.890499] (-) TimerEvent: {}
+[13.991047] (-) TimerEvent: {}
+[14.093787] (-) TimerEvent: {}
+[14.194423] (-) TimerEvent: {}
+[14.294938] (-) TimerEvent: {}
+[14.395412] (-) TimerEvent: {}
+[14.498481] (-) TimerEvent: {}
+[14.598933] (-) TimerEvent: {}
+[14.699581] (-) TimerEvent: {}
+[14.802328] (-) TimerEvent: {}
+[14.902933] (-) TimerEvent: {}
+[15.003305] (-) TimerEvent: {}
+[15.103786] (-) TimerEvent: {}
+[15.209492] (-) TimerEvent: {}
+[15.315522] (-) TimerEvent: {}
+[15.417884] (-) TimerEvent: {}
+[15.524498] (-) TimerEvent: {}
+[15.627532] (-) TimerEvent: {}
+[15.728584] (-) TimerEvent: {}
+[15.829218] (-) TimerEvent: {}
+[15.930331] (-) TimerEvent: {}
+[16.030920] (-) TimerEvent: {}
+[16.131323] (-) TimerEvent: {}
+[16.231748] (-) TimerEvent: {}
+[16.332687] (-) TimerEvent: {}
+[16.435541] (-) TimerEvent: {}
+[16.536313] (-) TimerEvent: {}
+[16.636844] (-) TimerEvent: {}
+[16.737131] (-) TimerEvent: {}
+[16.837476] (-) TimerEvent: {}
+[16.937932] (-) TimerEvent: {}
+[17.038392] (-) TimerEvent: {}
+[17.138907] (-) TimerEvent: {}
+[17.239254] (-) TimerEvent: {}
+[17.339688] (-) TimerEvent: {}
+[17.440066] (-) TimerEvent: {}
+[17.540359] (-) TimerEvent: {}
+[17.640915] (-) TimerEvent: {}
+[17.741958] (-) TimerEvent: {}
+[17.842692] (-) TimerEvent: {}
+[17.943114] (-) TimerEvent: {}
+[18.043545] (-) TimerEvent: {}
+[18.143884] (-) TimerEvent: {}
+[18.244406] (-) TimerEvent: {}
+[18.344781] (-) TimerEvent: {}
+[18.445099] (-) TimerEvent: {}
+[18.547247] (-) TimerEvent: {}
+[18.648436] (-) TimerEvent: {}
+[18.748890] (-) TimerEvent: {}
+[18.849258] (-) TimerEvent: {}
+[18.950333] (-) TimerEvent: {}
+[19.051001] (-) TimerEvent: {}
+[19.155510] (-) TimerEvent: {}
+[19.256111] (-) TimerEvent: {}
+[19.356495] (-) TimerEvent: {}
+[19.457038] (-) TimerEvent: {}
+[19.557426] (-) TimerEvent: {}
+[19.657850] (-) TimerEvent: {}
+[19.758171] (-) TimerEvent: {}
+[19.858622] (-) TimerEvent: {}
+[19.960543] (-) TimerEvent: {}
+[20.064117] (-) TimerEvent: {}
+[20.166128] (-) TimerEvent: {}
+[20.268371] (-) TimerEvent: {}
+[20.369598] (-) TimerEvent: {}
+[20.471223] (-) TimerEvent: {}
+[20.574626] (-) TimerEvent: {}
+[20.675001] (-) TimerEvent: {}
+[20.787462] (-) TimerEvent: {}
+[21.040942] (-) TimerEvent: {}
+[21.252684] (-) TimerEvent: {}
+[21.393251] (-) TimerEvent: {}

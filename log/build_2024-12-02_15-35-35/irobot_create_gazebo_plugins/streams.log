@@ -1,0 +1,2 @@
+[0.011s] Invoking command in '/home/eea/create3_ws/build/irobot_create_gazebo_plugins': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_gazebo_plugins -- -j8 -l8
+[0.106s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_helpers.dir/src/gazebo_ros_helpers.cpp.o[0m

@@ -1,0 +1,6 @@
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ui_mgr_lib.dir/build.make:76 : CMakeFiles/ui_mgr_lib.dir/src/ui_mgr.cpp.o] Erreur 1
+gmake[1]: *** [CMakeFiles/Makefile2:427 : CMakeFiles/ui_mgr_lib.dir/all] Erreur 2
+gmake[1]: *** Attente des tâches non terminées....
+gmake: *** [Makefile:146 : all] Erreur 2

@@ -1,0 +1,85 @@
+[0.043s] Invoking command in '/home/eea/create3_ws/build/irobot_create_common_bringup': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_nodes/lib:/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup -DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_common_bringup
+[0.173s] -- The C compiler identification is GNU 11.4.0
+[0.236s] -- The CXX compiler identification is GNU 11.4.0
+[0.249s] -- Detecting C compiler ABI info
+[0.323s] -- Detecting C compiler ABI info - done
+[0.331s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.332s] -- Detecting C compile features
+[0.332s] -- Detecting C compile features - done
+[0.336s] -- Detecting CXX compiler ABI info
+[0.421s] -- Detecting CXX compiler ABI info - done
+[0.435s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.435s] -- Detecting CXX compile features
+[0.436s] -- Detecting CXX compile features - done
+[0.453s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.742s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.217s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.366s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.367s] -- Added test 'lint_cmake' to check CMake code style
+[1.369s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.372s] -- Added test 'xmllint' to check XML markup files
+[1.375s] -- Configuring done
+[1.381s] -- Generating done
+[1.386s] -- Build files have been written to: /home/eea/create3_ws/build/irobot_create_common_bringup
+[1.396s] Invoked command in '/home/eea/create3_ws/build/irobot_create_common_bringup' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_nodes/lib:/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_common_bringup -DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_common_bringup
+[1.399s] Invoking command in '/home/eea/create3_ws/build/irobot_create_common_bringup': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_nodes/lib:/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_common_bringup -- -j8 -l8
+[1.501s] Built target ament_cmake_python_copy_irobot_create_common_bringup
+[2.136s] running egg_info
+[2.137s] creating irobot_create_common_bringup.egg-info
+[2.138s] writing irobot_create_common_bringup.egg-info/PKG-INFO
+[2.138s] writing dependency_links to irobot_create_common_bringup.egg-info/dependency_links.txt
+[2.138s] writing top-level names to irobot_create_common_bringup.egg-info/top_level.txt
+[2.139s] writing manifest file 'irobot_create_common_bringup.egg-info/SOURCES.txt'
+[2.143s] reading manifest file 'irobot_create_common_bringup.egg-info/SOURCES.txt'
+[2.143s] writing manifest file 'irobot_create_common_bringup.egg-info/SOURCES.txt'
+[2.216s] Built target ament_cmake_python_build_irobot_create_common_bringup_egg
+[2.237s] Invoked command in '/home/eea/create3_ws/build/irobot_create_common_bringup' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_nodes/lib:/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_common_bringup -- -j8 -l8
+[2.241s] Invoking command in '/home/eea/create3_ws/build/irobot_create_common_bringup': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_nodes/lib:/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_common_bringup
+[2.251s] -- Install configuration: ""
+[2.251s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config
+[2.251s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/robot_state_params.yaml
+[2.251s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/wheel_status_params.yaml
+[2.252s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/kidnap_estimator_params.yaml
+[2.252s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/mock_params.yaml
+[2.252s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/ir_intensity_vector_params.yaml
+[2.252s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/hazard_vector_params.yaml
+[2.252s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/config/ui_mgr_params.yaml
+[2.253s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/launch
+[2.253s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/launch/dock_description.launch.py
+[2.253s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/launch/robot_description.launch.py
+[2.253s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/launch/create3_nodes.launch.py
+[2.253s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/launch/rviz2.launch.py
+[2.254s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/rviz
+[2.254s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/rviz/irobot_logo.jpg
+[2.254s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/rviz/irobot_create_view.rviz
+[2.255s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/environment/pythonpath.sh
+[2.255s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/environment/pythonpath.dsv
+[2.255s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup-2.1.0-py3.10.egg-info
+[2.255s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup-2.1.0-py3.10.egg-info/SOURCES.txt
+[2.255s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup-2.1.0-py3.10.egg-info/top_level.txt
+[2.255s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup-2.1.0-py3.10.egg-info/PKG-INFO
+[2.256s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup-2.1.0-py3.10.egg-info/dependency_links.txt
+[2.256s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup
+[2.256s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup/__init__.py
+[2.256s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup/namespace.py
+[2.256s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup/offset.py
+[2.309s] Listing '/home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup'...
+[2.310s] Compiling '/home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup/__init__.py'...
+[2.310s] Compiling '/home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup/namespace.py'...
+[2.310s] Compiling '/home/eea/create3_ws/install/irobot_create_common_bringup/local/lib/python3.10/dist-packages/irobot_create_common_bringup/offset.py'...
+[2.326s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/ament_index/resource_index/package_run_dependencies/irobot_create_common_bringup
+[2.326s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/ament_index/resource_index/parent_prefix_path/irobot_create_common_bringup
+[2.326s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/environment/ament_prefix_path.sh
+[2.327s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/environment/ament_prefix_path.dsv
+[2.327s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/environment/path.sh
+[2.327s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/environment/path.dsv
+[2.327s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/local_setup.bash
+[2.328s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/local_setup.sh
+[2.328s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/local_setup.zsh
+[2.328s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/local_setup.dsv
+[2.328s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/package.dsv
+[2.328s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/ament_index/resource_index/packages/irobot_create_common_bringup
+[2.329s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/cmake/irobot_create_common_bringupConfig.cmake
+[2.329s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/cmake/irobot_create_common_bringupConfig-version.cmake
+[2.329s] -- Installing: /home/eea/create3_ws/install/irobot_create_common_bringup/share/irobot_create_common_bringup/package.xml
+[2.333s] Invoked command in '/home/eea/create3_ws/build/irobot_create_common_bringup' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_nodes:/home/eea/create3_ws/install/irobot_create_toolbox:/home/eea/create3_ws/install/irobot_create_description:/home/eea/create3_ws/install/irobot_create_control:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_nodes/lib:/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_common_bringup

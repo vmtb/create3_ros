@@ -1,0 +1,7 @@
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/irobot_create_ignition_sensors_lib.dir/build.make:118 : CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o] Erreur 1
+gmake[2]: *** Attente des tâches non terminées....
+gmake[1]: *** [CMakeFiles/Makefile2:173 : CMakeFiles/irobot_create_ignition_sensors_lib.dir/all] Erreur 2
+gmake[1]: *** Attente des tâches non terminées....
+gmake: *** [Makefile:146 : all] Erreur 2

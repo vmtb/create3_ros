@@ -1,0 +1,74 @@
+[0.161s] Invoking command in '/home/eea/create3_ws/build/irobot_create_nodes': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_nodes -- -j8 -l8
+[0.464s] [ 48%] Built target hazard_publisher_lib
+[0.582s] [ 48%] Built target wheel_status_publisher
+[0.731s] [ 48%] Built target robot_state_lib
+[0.889s] [ 48%] Built target robot_state
+[1.085s] [ 48%] Built target ui_mgr_lib
+[1.304s] [ 48%] Built target ui_mgr
+[1.437s] [ 48%] Built target mock_publisher_lib
+[1.545s] [ 48%] Built target mock_publisher
+[1.679s] [ 48%] Built target kidnap_estimator_publisher_lib
+[1.891s] [ 48%] Built target kidnap_estimator_publisher
+[2.074s] [ 48%] Built target wheel_status_publisher_lib
+[2.242s] [ 48%] Built target motion_control
+[2.438s] [ 48%] Built target motion_control_lib
+[2.595s] [ 48%] Built target ir_intensity_vector_publisher
+[2.775s] [ 48%] Built target ir_intensity_publisher_lib
+[2.921s] [ 48%] Built target hazards_vector_publisher
+[2.992s] Invoked command in '/home/eea/create3_ws/build/irobot_create_nodes' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_nodes -- -j8 -l8
+[3.007s] Invoking command in '/home/eea/create3_ws/build/irobot_create_nodes': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_nodes
+[3.084s] -- Install configuration: ""
+[3.092s] -- Execute custom install script
+[3.093s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/hazards_vector_publisher
+[3.094s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/ir_intensity_vector_publisher
+[3.106s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/motion_control
+[3.108s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/wheel_status_publisher
+[3.108s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/robot_state
+[3.109s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/ui_mgr
+[3.117s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/mock_publisher
+[3.118s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/irobot_create_nodes/kidnap_estimator_publisher
+[3.118s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libhazard_publisher_lib.so
+[3.119s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libir_intensity_publisher_lib.so
+[3.121s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libmotion_control_lib.so
+[3.121s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libwheel_status_publisher_lib.so
+[3.122s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/librobot_state_lib.so
+[3.122s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libui_mgr_lib.so
+[3.122s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libmock_publisher_lib.so
+[3.125s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/lib/libkidnap_estimator_publisher_lib.so
+[3.126s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/hazards_vector_publisher.hpp
+[3.130s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/ir_intensity_vector_publisher.hpp
+[3.130s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/kidnap_estimator_publisher.hpp
+[3.130s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/mock_publisher.hpp
+[3.131s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/behaviors_scheduler.hpp
+[3.141s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/docking_behavior.hpp
+[3.148s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/drive_goal_behaviors.hpp
+[3.148s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/reflex_behavior.hpp
+[3.149s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/simple_goal_controller.hpp
+[3.149s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/wall_follow_behavior.hpp
+[3.150s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control/wall_follow_states.hpp
+[3.150s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/motion_control_node.hpp
+[3.150s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/robot_state.hpp
+[3.154s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/ui_mgr.hpp
+[3.155s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/include/irobot_create_nodes/wheels_publisher.hpp
+[3.155s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/environment/library_path.sh
+[3.155s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/environment/library_path.dsv
+[3.156s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/ament_index/resource_index/package_run_dependencies/irobot_create_nodes
+[3.156s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/ament_index/resource_index/parent_prefix_path/irobot_create_nodes
+[3.156s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/environment/ament_prefix_path.sh
+[3.167s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/environment/ament_prefix_path.dsv
+[3.167s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/environment/path.sh
+[3.168s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/environment/path.dsv
+[3.168s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/local_setup.bash
+[3.169s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/local_setup.sh
+[3.169s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/local_setup.zsh
+[3.169s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/local_setup.dsv
+[3.169s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/package.dsv
+[3.253s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/ament_index/resource_index/packages/irobot_create_nodes
+[3.255s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/ament_index/resource_index/rclcpp_components/irobot_create_nodes
+[3.256s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.259s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/cmake/ament_cmake_export_libraries-extras.cmake
+[3.260s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.261s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/cmake/irobot_create_nodesConfig.cmake
+[3.262s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/cmake/irobot_create_nodesConfig-version.cmake
+[3.262s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_nodes/share/irobot_create_nodes/package.xml
+[3.292s] Invoked command in '/home/eea/create3_ws/build/irobot_create_nodes' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_nodes

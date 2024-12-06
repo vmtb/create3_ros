@@ -1,0 +1,27 @@
+[0.016s] Invoking command in '/home/eea/create3_ws/build/irobot_create_gazebo_plugins': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_gazebo_plugins -- -j8 -l8
+[0.148s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_helpers.dir/src/gazebo_ros_helpers.cpp.o[0m
+[22.605s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_helpers.so[0m
+[23.400s] [  5%] Built target gazebo_ros_create_helpers
+[23.455s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_cliff_sensor.dir/src/gazebo_ros_cliff_sensor.cpp.o[0m
+[23.456s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_ir_intensity_sensor.dir/src/gazebo_ros_ir_intensity_sensor.cpp.o[0m
+[23.457s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_docking_status.dir/src/gazebo_ros_docking_status.cpp.o[0m
+[23.459s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_imu.dir/src/gazebo_ros_imu.cpp.o[0m
+[23.460s] [  5%] [32mBuilding CXX object CMakeFiles/gazebo_ros_create_bumper.dir/src/gazebo_ros_bumper.cpp.o[0m
+[132.762s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+[132.765s] compilation terminated.
+[132.781s] gmake[2]: *** [CMakeFiles/gazebo_ros_create_docking_status.dir/build.make:76 : CMakeFiles/gazebo_ros_create_docking_status.dir/src/gazebo_ros_docking_status.cpp.o] Erreur 1
+[132.809s] gmake[1]: *** [CMakeFiles/Makefile2:207 : CMakeFiles/gazebo_ros_create_docking_status.dir/all] Erreur 2
+[132.811s] gmake[1]: *** Attente des tâches non terminées....
+[182.612s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+[182.623s] compilation terminated.
+[182.623s] gmake[2]: *** [CMakeFiles/gazebo_ros_create_imu.dir/build.make:76 : CMakeFiles/gazebo_ros_create_imu.dir/src/gazebo_ros_imu.cpp.o] Erreur 1
+[182.623s] gmake[1]: *** [CMakeFiles/Makefile2:259 : CMakeFiles/gazebo_ros_create_imu.dir/all] Erreur 2
+[663.168s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+[663.171s] compilation terminated.
+[663.171s] gmake[2]: *** [CMakeFiles/gazebo_ros_create_cliff_sensor.dir/build.make:76 : CMakeFiles/gazebo_ros_create_cliff_sensor.dir/src/gazebo_ros_cliff_sensor.cpp.o] Erreur 1
+[663.171s] gmake[1]: *** [CMakeFiles/Makefile2:181 : CMakeFiles/gazebo_ros_create_cliff_sensor.dir/all] Erreur 2
+[684.525s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_ir_intensity_sensor.so[0m
+[686.265s] [  5%] Built target gazebo_ros_create_ir_intensity_sensor
+[690.153s] [  5%] [32m[1mLinking CXX shared library libgazebo_ros_create_bumper.so[0m
+[691.328s] [  5%] Built target gazebo_ros_create_bumper
+[691.334s] gmake: *** [Makefile:146 : all] Erreur 2

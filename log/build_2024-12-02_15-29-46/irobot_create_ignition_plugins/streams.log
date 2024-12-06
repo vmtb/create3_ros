@@ -1,0 +1,4 @@
+[0.019s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_plugins -- -j8 -l8
+[0.062s] [0mCMake Error: The source directory "/home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_plugins" does not exist.
+[0.062s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.063s] gmake: *** [Makefile:254 : cmake_check_build_system] Erreur 1

@@ -1,0 +1,4 @@
+[0.022s] Invoking command in '/home/eea/create3_ws/build/irobot_create_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_toolbox -- -j8 -l8
+[0.077s] [0mCMake Error: The source directory "/home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox" does not exist.
+[0.077s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.078s] gmake: *** [Makefile:267 : cmake_check_build_system] Erreur 1

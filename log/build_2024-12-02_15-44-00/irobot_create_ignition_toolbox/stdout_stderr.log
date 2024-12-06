@@ -1,0 +1,19 @@
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_pose_republisher_lib.dir/src/pose_republisher/pose_republisher_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/sensors_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_interface_buttons_lib.dir/src/interface_buttons/interface_buttons_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/bumper.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/cliff.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_opcode.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/mouse.cpp.o[0m
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/irobot_create_ignition_sensors_lib.dir/build.make:118 : CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o] Erreur 1
+gmake[2]: *** Attente des tâches non terminées....
+[ 44%] [32m[1mLinking CXX shared library libirobot_create_ignition_interface_buttons_lib.so[0m
+[ 44%] Built target irobot_create_ignition_interface_buttons_lib
+[ 44%] [32m[1mLinking CXX shared library libirobot_create_ignition_pose_republisher_lib.so[0m
+gmake[1]: *** [CMakeFiles/Makefile2:173 : CMakeFiles/irobot_create_ignition_sensors_lib.dir/all] Erreur 2
+gmake[1]: *** Attente des tâches non terminées....
+[ 44%] Built target irobot_create_ignition_pose_republisher_lib
+gmake: *** [Makefile:146 : all] Erreur 2

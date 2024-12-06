@@ -1,0 +1,81 @@
+[0.020s] Invoking command in '/home/eea/create3_ws/build/irobot_create_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_toolbox
+[0.198s] -- The C compiler identification is GNU 11.4.0
+[0.323s] -- The CXX compiler identification is GNU 11.4.0
+[0.335s] -- Detecting C compiler ABI info
+[0.416s] -- Detecting C compiler ABI info - done
+[0.424s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.424s] -- Detecting C compile features
+[0.424s] -- Detecting C compile features - done
+[0.427s] -- Detecting CXX compiler ABI info
+[0.504s] -- Detecting CXX compiler ABI info - done
+[0.519s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.519s] -- Detecting CXX compile features
+[0.520s] -- Detecting CXX compile features - done
+[0.526s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.676s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.749s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.789s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.806s] -- Searching for dependencies of ignition-math6
+[0.810s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.884s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.889s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.902s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.921s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.945s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.012s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.017s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.117s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.148s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.190s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.201s] -- Looking for pthread.h
+[1.269s] -- Looking for pthread.h - found
+[1.270s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.334s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.335s] -- Found Threads: TRUE  
+[1.406s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.485s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.485s] -- Configured cppcheck include dirs: /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox/include
+[1.485s] -- Configured cppcheck exclude dirs and/or files: 
+[1.486s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.487s] -- Configured cpplint exclude dirs and/or files: 
+[1.487s] -- Added test 'lint_cmake' to check CMake code style
+[1.488s] -- Added test 'uncrustify' to check C / C++ code style
+[1.489s] -- Configured uncrustify additional arguments: 
+[1.489s] -- Added test 'xmllint' to check XML markup files
+[1.491s] -- Configuring done
+[1.500s] -- Generating done
+[1.503s] -- Build files have been written to: /home/eea/create3_ws/build/irobot_create_toolbox
+[1.512s] Invoked command in '/home/eea/create3_ws/build/irobot_create_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/eea/create3_ws/src/create3_sim/irobot_create_common/irobot_create_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_toolbox
+[1.514s] Invoking command in '/home/eea/create3_ws/build/irobot_create_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_toolbox -- -j8 -l8
+[1.559s] [ 50%] [32mBuilding CXX object CMakeFiles/irobot_create_toolbox.dir/src/polar_coordinates.cpp.o[0m
+[4.266s] [100%] [32m[1mLinking CXX shared library libirobot_create_toolbox.so[0m
+[4.568s] [100%] Built target irobot_create_toolbox
+[4.578s] Invoked command in '/home/eea/create3_ws/build/irobot_create_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_toolbox -- -j8 -l8
+[4.579s] Invoking command in '/home/eea/create3_ws/build/irobot_create_toolbox': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_toolbox
+[4.586s] -- Install configuration: ""
+[4.587s] -- Execute custom install script
+[4.587s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/lib/libirobot_create_toolbox.so
+[4.595s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/math.hpp
+[4.603s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/polar_coordinates.hpp
+[4.613s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/include/irobot_create_toolbox/sensors/bumpers.hpp
+[4.624s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/library_path.sh
+[4.631s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/library_path.dsv
+[4.639s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/package_run_dependencies/irobot_create_toolbox
+[4.648s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/parent_prefix_path/irobot_create_toolbox
+[4.656s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/ament_prefix_path.sh
+[4.666s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/ament_prefix_path.dsv
+[4.674s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/path.sh
+[4.682s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/environment/path.dsv
+[4.690s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.bash
+[4.698s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.sh
+[4.705s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.zsh
+[4.714s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/local_setup.dsv
+[4.723s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/package.dsv
+[4.732s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/ament_index/resource_index/packages/irobot_create_toolbox
+[4.740s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.750s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[4.759s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.767s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/irobot_create_toolboxConfig.cmake
+[4.776s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake/irobot_create_toolboxConfig-version.cmake
+[4.784s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/package.xml
+[4.795s] Invoked command in '/home/eea/create3_ws/build/irobot_create_toolbox' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_toolbox

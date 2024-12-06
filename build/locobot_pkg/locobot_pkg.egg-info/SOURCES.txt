@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+locobot_pkg/__init__.py
+locobot_pkg/go_to_position.py
+locobot_pkg/move_locobot.py
+locobot_pkg.egg-info/PKG-INFO
+locobot_pkg.egg-info/SOURCES.txt
+locobot_pkg.egg-info/dependency_links.txt
+locobot_pkg.egg-info/entry_points.txt
+locobot_pkg.egg-info/requires.txt
+locobot_pkg.egg-info/top_level.txt
+locobot_pkg.egg-info/zip-safe
+resource/locobot_pkg

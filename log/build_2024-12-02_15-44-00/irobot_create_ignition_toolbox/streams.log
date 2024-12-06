@@ -1,0 +1,20 @@
+[0.017s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_toolbox -- -j8 -l8
+[0.091s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_pose_republisher_lib.dir/src/pose_republisher/pose_republisher_node.cpp.o[0m
+[0.091s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/sensors_node.cpp.o[0m
+[0.092s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_interface_buttons_lib.dir/src/interface_buttons/interface_buttons_node.cpp.o[0m
+[0.106s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/bumper.cpp.o[0m
+[0.106s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/cliff.cpp.o[0m
+[0.106s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o[0m
+[0.121s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_opcode.cpp.o[0m
+[0.125s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/mouse.cpp.o[0m
+[114.885s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+[115.010s] compilation terminated.
+[115.011s] gmake[2]: *** [CMakeFiles/irobot_create_ignition_sensors_lib.dir/build.make:118 : CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o] Erreur 1
+[115.012s] gmake[2]: *** Attente des tâches non terminées....
+[673.902s] [ 44%] [32m[1mLinking CXX shared library libirobot_create_ignition_interface_buttons_lib.so[0m
+[676.393s] [ 44%] Built target irobot_create_ignition_interface_buttons_lib
+[688.873s] [ 44%] [32m[1mLinking CXX shared library libirobot_create_ignition_pose_republisher_lib.so[0m
+[689.146s] gmake[1]: *** [CMakeFiles/Makefile2:173 : CMakeFiles/irobot_create_ignition_sensors_lib.dir/all] Erreur 2
+[689.146s] gmake[1]: *** Attente des tâches non terminées....
+[689.948s] [ 44%] Built target irobot_create_ignition_pose_republisher_lib
+[690.018s] gmake: *** [Makefile:146 : all] Erreur 2

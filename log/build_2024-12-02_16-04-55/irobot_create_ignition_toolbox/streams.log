@@ -1,0 +1,89 @@
+[0.015s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_ignition_toolbox
+[0.027s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.162s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.169s] -- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.192s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.195s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.200s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.209s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.221s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.365s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.395s] -- Found irobot_create_msgs: 2.1.0 (/opt/ros/humble/share/irobot_create_msgs/cmake)
+[0.415s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.440s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.442s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.543s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.604s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.617s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[0.622s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.627s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.629s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.680s] -- Found irobot_create_toolbox: 2.1.0 (/home/eea/create3_ws/install/irobot_create_toolbox/share/irobot_create_toolbox/cmake)
+[0.740s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.827s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.828s] -- Configured cppcheck include dirs: /home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox/include
+[0.828s] -- Configured cppcheck exclude dirs and/or files: 
+[0.830s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.830s] -- Configured cpplint exclude dirs and/or files: 
+[0.832s] -- Added test 'lint_cmake' to check CMake code style
+[0.835s] -- Added test 'uncrustify' to check C / C++ code style
+[0.835s] -- Configured uncrustify additional arguments: 
+[0.835s] -- Added test 'xmllint' to check XML markup files
+[0.841s] -- Configuring done
+[0.938s] -- Generating done
+[0.968s] -- Build files have been written to: /home/eea/create3_ws/build/irobot_create_ignition_toolbox
+[0.991s] Invoked command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/eea/create3_ws/src/create3_sim/irobot_create_ignition/irobot_create_ignition_toolbox -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/eea/create3_ws/install/irobot_create_ignition_toolbox
+[0.992s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_toolbox -- -j8 -l8
+[1.033s] [35m[1mConsolidate compiler generated dependencies of target irobot_create_ignition_pose_republisher_lib[0m
+[1.036s] [35m[1mConsolidate compiler generated dependencies of target irobot_create_ignition_interface_buttons_lib[0m
+[1.042s] [35m[1mConsolidate compiler generated dependencies of target irobot_create_ignition_sensors_lib[0m
+[1.052s] [ 44%] Built target irobot_create_ignition_interface_buttons_lib
+[1.052s] [ 44%] Built target irobot_create_ignition_pose_republisher_lib
+[1.063s] [35m[1mConsolidate compiler generated dependencies of target pose_republisher_node[0m
+[1.063s] [35m[1mConsolidate compiler generated dependencies of target interface_buttons_node[0m
+[1.082s] [ 44%] Built target interface_buttons_node
+[1.084s] [ 44%] Built target pose_republisher_node
+[1.084s] [ 44%] Built target irobot_create_ignition_sensors_lib
+[1.096s] [35m[1mConsolidate compiler generated dependencies of target sensors_node[0m
+[1.113s] [ 44%] Built target sensors_node
+[1.124s] Invoked command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_toolbox -- -j8 -l8
+[1.125s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_ignition_toolbox
+[1.135s] -- Install configuration: ""
+[1.135s] -- Execute custom install script
+[1.135s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/lib/libirobot_create_ignition_pose_republisher_lib.so
+[1.135s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/lib/libirobot_create_ignition_sensors_lib.so
+[1.135s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/lib/libirobot_create_ignition_interface_buttons_lib.so
+[1.136s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/lib/irobot_create_ignition_toolbox/pose_republisher_node
+[1.136s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/lib/irobot_create_ignition_toolbox/sensors_node
+[1.136s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/lib/irobot_create_ignition_toolbox/interface_buttons_node
+[1.137s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/interface_buttons/interface_buttons_node.hpp
+[1.138s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/pose_republisher/pose_republisher.hpp
+[1.138s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/bumper.hpp
+[1.139s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/cliff.hpp
+[1.139s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/ir_intensity.hpp
+[1.140s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/ir_opcode.hpp
+[1.140s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/mouse.hpp
+[1.140s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/sensors_node.hpp
+[1.141s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/sensors/wheel_drop.hpp
+[1.142s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/include/irobot_create_ignition_toolbox/utils.hpp
+[1.142s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/environment/library_path.sh
+[1.143s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/environment/library_path.dsv
+[1.143s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/ament_index/resource_index/package_run_dependencies/irobot_create_ignition_toolbox
+[1.144s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/ament_index/resource_index/parent_prefix_path/irobot_create_ignition_toolbox
+[1.144s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/environment/ament_prefix_path.sh
+[1.145s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/environment/ament_prefix_path.dsv
+[1.145s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/environment/path.sh
+[1.146s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/environment/path.dsv
+[1.146s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/local_setup.bash
+[1.146s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/local_setup.sh
+[1.146s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/local_setup.zsh
+[1.147s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/local_setup.dsv
+[1.147s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/package.dsv
+[1.163s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/ament_index/resource_index/packages/irobot_create_ignition_toolbox
+[1.163s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.163s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[1.163s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.164s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/cmake/irobot_create_ignition_toolboxConfig.cmake
+[1.164s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/cmake/irobot_create_ignition_toolboxConfig-version.cmake
+[1.164s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_ignition_toolbox/share/irobot_create_ignition_toolbox/package.xml
+[1.174s] Invoked command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox' returned '0': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox:/opt/ros/humble LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_ignition_toolbox

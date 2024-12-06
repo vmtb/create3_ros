@@ -1,0 +1,9 @@
+[0.015s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_toolbox': AMENT_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox CMAKE_PREFIX_PATH=/home/eea/create3_ws/install/irobot_create_toolbox LD_LIBRARY_PATH=/home/eea/create3_ws/install/irobot_create_toolbox/lib /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_toolbox -- -j8 -l8
+[0.099s] [ 11%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/cliff.cpp.o[0m
+[0.099s] [ 16%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_pose_republisher_lib.dir/src/pose_republisher/pose_republisher_node.cpp.o[0m
+[0.100s] [ 16%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/bumper.cpp.o[0m
+[0.100s] [ 22%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/sensors_node.cpp.o[0m
+[0.105s] [ 27%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_intensity.cpp.o[0m
+[0.109s] [ 33%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/ir_opcode.cpp.o[0m
+[0.110s] [ 38%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_sensors_lib.dir/src/sensors/mouse.cpp.o[0m
+[0.118s] [ 44%] [32mBuilding CXX object CMakeFiles/irobot_create_ignition_interface_buttons_lib.dir/src/interface_buttons/interface_buttons_node.cpp.o[0m

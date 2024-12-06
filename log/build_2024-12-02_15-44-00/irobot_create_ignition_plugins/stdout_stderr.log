@@ -1,0 +1,10 @@
+[ 50%] [34m[1mAutomatic MOC for target Create3Hmi[0m
+[ 50%] Built target Create3Hmi_autogen
+[ 50%] [32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi_autogen/mocs_compilation.cpp.o[0m
+[ 50%] [32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o[0m
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [Create3Hmi/CMakeFiles/Create3Hmi.dir/build.make:99 : Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o] Erreur 1
+gmake[2]: *** Attente des tâches non terminées....
+gmake[1]: *** [CMakeFiles/Makefile2:153 : Create3Hmi/CMakeFiles/Create3Hmi.dir/all] Erreur 2
+gmake: *** [Makefile:146 : all] Erreur 2

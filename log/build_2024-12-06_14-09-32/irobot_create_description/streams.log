@@ -1,0 +1,40 @@
+[0.118s] Invoking command in '/home/eea/create3_ws/build/irobot_create_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_description -- -j8 -l8
+[1.321s] Invoked command in '/home/eea/create3_ws/build/irobot_create_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_description -- -j8 -l8
+[1.370s] Invoking command in '/home/eea/create3_ws/build/irobot_create_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_description
+[1.473s] -- Install configuration: ""
+[1.480s] -- Execute custom install script
+[1.481s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/body_visual.dae
+[1.490s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/bumper_collision.dae
+[1.491s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/bumper_visual.dae
+[1.496s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//meshes/dock/visual.dae
+[1.497s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/bumper.urdf.xacro
+[1.498s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/button.urdf.xacro
+[1.498s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/caster.urdf.xacro
+[1.499s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/common_properties.urdf.xacro
+[1.499s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/create3.urdf.xacro
+[1.499s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/dock/ir_emitter.urdf.xacro
+[1.504s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/dock/standard_dock.urdf.xacro
+[1.504s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/cliff_sensor.urdf.xacro
+[1.509s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/imu.urdf.xacro
+[1.509s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/ir_intensity.urdf.xacro
+[1.510s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/ir_opcode_receivers.urdf.xacro
+[1.510s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/sensors/optical_mouse.urdf.xacro
+[1.510s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel.urdf.xacro
+[1.511s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel_drop.urdf.xacro
+[1.511s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description//urdf/wheel_with_wheeldrop.urdf.xacro
+[1.511s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/package_run_dependencies/irobot_create_description
+[1.512s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/parent_prefix_path/irobot_create_description
+[1.512s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/ament_prefix_path.sh
+[1.514s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/ament_prefix_path.dsv
+[1.514s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/path.sh
+[1.514s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/environment/path.dsv
+[1.515s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.bash
+[1.515s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.sh
+[1.515s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.zsh
+[1.515s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/local_setup.dsv
+[1.516s] -- Symlinking: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/package.dsv
+[1.556s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/ament_index/resource_index/packages/irobot_create_description
+[1.557s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/cmake/irobot_create_descriptionConfig.cmake
+[1.557s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/cmake/irobot_create_descriptionConfig-version.cmake
+[1.557s] -- Up-to-date symlink: /home/eea/create3_ws/install/irobot_create_description/share/irobot_create_description/package.xml
+[1.560s] Invoked command in '/home/eea/create3_ws/build/irobot_create_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/eea/create3_ws/build/irobot_create_description

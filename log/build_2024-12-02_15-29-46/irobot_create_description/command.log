@@ -1,0 +1,2 @@
+Invoking command in '/home/eea/create3_ws/build/irobot_create_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_description -- -j8 -l8
+Invoked command in '/home/eea/create3_ws/build/irobot_create_description' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_description -- -j8 -l8

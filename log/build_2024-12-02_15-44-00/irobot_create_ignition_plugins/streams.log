@@ -1,0 +1,12 @@
+[0.022s] Invoking command in '/home/eea/create3_ws/build/irobot_create_ignition_plugins': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_plugins -- -j8 -l8
+[0.121s] [ 50%] [34m[1mAutomatic MOC for target Create3Hmi[0m
+[0.158s] [ 50%] Built target Create3Hmi_autogen
+[0.178s] [ 50%] [32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi_autogen/mocs_compilation.cpp.o[0m
+[0.178s] [ 50%] [32mBuilding CXX object Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o[0m
+[118.179s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KProcessus arrêté signal terminated program cc1plus
+[118.184s] compilation terminated.
+[118.195s] gmake[2]: *** [Create3Hmi/CMakeFiles/Create3Hmi.dir/build.make:99 : Create3Hmi/CMakeFiles/Create3Hmi.dir/Create3Hmi.cc.o] Erreur 1
+[118.203s] gmake[2]: *** Attente des tâches non terminées....
+[682.500s] gmake[1]: *** [CMakeFiles/Makefile2:153 : Create3Hmi/CMakeFiles/Create3Hmi.dir/all] Erreur 2
+[682.504s] gmake: *** [Makefile:146 : all] Erreur 2
+[682.646s] Invoked command in '/home/eea/create3_ws/build/irobot_create_ignition_plugins' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/eea/create3_ws/build/irobot_create_ignition_plugins -- -j8 -l8
