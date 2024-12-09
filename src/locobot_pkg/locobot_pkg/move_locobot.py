@@ -4,6 +4,7 @@ from rclpy.action import ActionClient
 
 from irobot_create_msgs.action import Undock
 from irobot_create_msgs.msg import DockStatus
+from nav_msgs.msg import Odometry
 
 from geometry_msgs.msg import Point, Quaternion
 from geometry_msgs.msg import Twist
@@ -11,6 +12,14 @@ from geometry_msgs.msg import Twist
 from locobot_pkg.go_to_position import GoToPosition
 
 from time import sleep
+
+class OdomSubscriber(Node):
+    def _init_(self):
+        super()._init_('odom_subscriber')
+        self.subscription = self.create_subscription(Odometry,'odom',self.listener_callback, 10)
+        self.subscription
+
+    
 
 
 class MoveLocobot(Node): 
@@ -22,6 +31,7 @@ class MoveLocobot(Node):
 
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.undock_status_verifier = self.create_subscription(DockStatus, '/dock_status', self.parseDockStatusVerifier, 10)
+        self.subscription_odom = self.create_subscription(Odometry,'odom',self.listener_callback, 10)
         
         self.action_undocker_ = ActionClient(self, Undock, '/undock')
         self.undock()
@@ -50,16 +60,12 @@ class MoveLocobot(Node):
 
         # Callback quand le résultat de l'undock est reçu
         result = future.result()
-        if result:
-            if self.isDocked==False:  
-                self.get_logger().info(f"Undocking terminé avec succès. Status: {result.status}") 
+        if result:  
+            self.get_logger().info(f"Undocking terminé avec succès. Status: {result.status}") 
 
-                goToPos = GoToPosition(self)
-                goToPos.navigate(self.whenNavigateToPoseIsDone, Point(x=-5.0,y=0.0,z=0.0), Quaternion(x=0.0,y=0.0,z=0.0,w=1.0))
-                # self.timer_ = self.create_timer(1/20, self.moveRobot)
-            else: 
-                sleep(3)
-                self.goal_response_callback(future) 
+            goToPos = GoToPosition(self)
+            goToPos.navigate(self.whenNavigateToPoseIsDone, Point(x=-5.0,y=2.0,z=0.0), Quaternion(x=0.0,y=0.0,z=0.0,w=1.0))
+            #self.timer_ = self.create_timer(1/20, self.moveRobot) 
             
         else:
             self.get_logger().error("Échec de l'undocking.")
@@ -71,6 +77,20 @@ class MoveLocobot(Node):
         self.get_logger().info(f"New dock position {result.is_docked}")
 
         self.isDocked  = result.is_docked 
+
+    def listener_callback(self,msg):
+        #position
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+
+        #orientation
+        orientation_q = msg.pose.pose.orientation
+        orientation_w = orientation_q.w
+        orientation_x = orientation_q.x
+        orientation_y = orientation_q.y
+        orientation_z = orientation_q.z
+
+        self.get_logger().info(f'Position: x={x}, y={y}')
 
 def main(args = None): 
     rclpy.init(args=args)
